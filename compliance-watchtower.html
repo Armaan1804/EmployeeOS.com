@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compliance Watchtower — EmployeeOS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="product-page.css" />
+  <style>
+    :root{--accent:#f59e0b;--accent-dark:#d97706;--accent-bg:#fffbeb;--accent-light:#fef3c7}
+    .svc-hero{background:radial-gradient(ellipse 80% 80% at 70% 40%,rgba(245,158,11,.4) 0%,transparent 60%),radial-gradient(ellipse 60% 60% at 30% 70%,rgba(217,119,6,.25) 0%,transparent 60%),linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px),#1a1200;background-size:auto,auto,28px 28px,28px 28px,auto;padding:8.5rem 0 5rem;overflow:hidden;}
+    .svc-hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+    .svc-eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+    .svc-hero-h1{font-size:clamp(2.2rem,4vw,3.25rem);font-weight:800;line-height:1.1;color:#fff;letter-spacing:-0.03em;margin-bottom:1.25rem}
+    .svc-hero-sub{font-size:1rem;color:rgba(255,255,255,.72);line-height:1.7;margin-bottom:2rem;max-width:480px}
+    .svc-hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+    .svc-hero-cta{display:inline-flex;align-items:center;gap:.375rem;background:var(--accent);color:#111;padding:.875rem 1.75rem;border-radius:100px;font-weight:700;font-size:.9375rem;text-decoration:none;transition:transform .2s,box-shadow .2s;box-shadow:0 4px 20px rgba(245,158,11,.4)}
+    .svc-hero-cta:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(245,158,11,.5)}
+    .svc-hero-cta-outline{display:inline-flex;align-items:center;gap:.375rem;background:transparent;color:#fff;padding:.875rem 1.75rem;border-radius:100px;font-weight:700;font-size:.9375rem;text-decoration:none;border:2px solid rgba(255,255,255,.35);transition:border-color .2s,background .2s}
+    .svc-hero-cta-outline:hover{border-color:rgba(255,255,255,.7);background:rgba(255,255,255,.08)}
+    .svc-visual-card{background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.3);border-radius:20px;padding:2rem;backdrop-filter:blur(12px)}
+    .alert-row{display:flex;align-items:flex-start;gap:.875rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:.875rem 1rem;margin-bottom:.625rem}
+    .alert-ico{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .alert-ico.warn{background:rgba(245,158,11,.3)}
+    .alert-ico.ok{background:rgba(16,163,74,.3)}
+    .alert-ico.info{background:rgba(59,130,246,.3)}
+    .alert-info strong{display:block;font-size:.8125rem;font-weight:700;color:#fff}
+    .alert-info span{font-size:.72rem;color:rgba(255,255,255,.55)}
+    .svc-features{background:#f9fafb}
+    .svc-feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+    .svc-feature-card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:2rem;transition:box-shadow .2s,transform .2s}
+    .svc-feature-card:hover{box-shadow:0 8px 30px rgba(0,0,0,.08);transform:translateY(-2px)}
+    .svc-feature-ico{width:52px;height:52px;border-radius:12px;background:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:1.125rem}
+    .svc-feature-card h3{font-size:1rem;font-weight:700;color:#111827;letter-spacing:-.01em;margin-bottom:.625rem;line-height:1.3}
+    .svc-feature-card p{font-size:.875rem;color:#6b7280;line-height:1.65}
+    .svc-steps{background:#fff}
+    .svc-steps-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+    .svc-steps-text h2{font-size:clamp(1.6rem,2.5vw,2.25rem);font-weight:800;color:#111827;letter-spacing:-0.03em;line-height:1.2;margin-bottom:1rem}
+    .svc-steps-text p{font-size:.9375rem;color:#4b5563;line-height:1.7;margin-bottom:1.5rem}
+    .svc-step-list{display:flex;flex-direction:column;gap:1.5rem}
+    .svc-step{display:flex;align-items:flex-start;gap:1rem}
+    .svc-step-num{width:36px;height:36px;border-radius:50%;background:var(--accent);color:#111;font-weight:800;font-size:.875rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .svc-step div strong{display:block;font-size:.9375rem;font-weight:700;color:#111827;margin-bottom:.25rem}
+    .svc-step div p{font-size:.875rem;color:#6b7280;line-height:1.6;margin:0}
+    .svc-steps-visual{background:var(--accent-bg);border:1px solid var(--accent-light);border-radius:20px;padding:2rem}
+    .svc-stat-row{display:flex;gap:1rem;margin-bottom:1rem}
+    .svc-stat-box{flex:1;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1.25rem;text-align:center}
+    .svc-stat-box strong{display:block;font-size:1.75rem;font-weight:900;color:var(--accent);letter-spacing:-0.04em}
+    .svc-stat-box span{font-size:.78rem;color:#6b7280}
+    .svc-cta-banner{background:#111827}
+    .svc-cta-inner{text-align:center;padding:4rem 0}
+    .svc-cta-inner h2{font-size:clamp(1.75rem,2.8vw,2.375rem);font-weight:800;color:#fff;letter-spacing:-0.03em;margin-bottom:1rem}
+    .svc-cta-inner p{font-size:1.0625rem;color:rgba(255,255,255,.7);max-width:540px;margin:0 auto 2rem;line-height:1.65}
+    .svc-cta-btn{display:inline-flex;align-items:center;gap:.375rem;background:var(--accent);color:#111;padding:.875rem 2rem;border-radius:100px;font-weight:700;font-size:.9375rem;text-decoration:none;transition:transform .2s,box-shadow .2s;box-shadow:0 4px 20px rgba(245,158,11,.4)}
+    .svc-cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(245,158,11,.5)}
+    .svc-hero-img { transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease; transform-origin: bottom center; }
+    .svc-hero-img:hover { transform: scale(1.03); filter: brightness(1.05); }
+    @media(max-width:768px){
+      .svc-hero{padding:7.5rem 0 0;}
+      .svc-hero-inner,.svc-steps-inner{grid-template-columns:1fr;gap:2.5rem;}
+      .svc-feature-grid{grid-template-columns:1fr;}
+      .svc-stat-row{flex-direction:column;gap:0.75rem;}
+      .svc-hero-visual{margin-bottom:0 !important; justify-content:center;}
+      .svc-hero-text{text-align:center;}
+      .svc-hero-sub{margin-left:auto; margin-right:auto;}
+      .svc-hero-ctas{justify-content:center;}
+      .svc-steps-text{text-align:center;}
+      .svc-step{text-align:left;}
+      .countries-grid{grid-template-columns:repeat(2,1fr);}
+    }}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav-wrapper" id="navbar">
+    <nav class="nav-inner container">
+      <a href="index.html" class="nav-logo" aria-label="EmployeeOS Home"><span class="logo-mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 4h7a4 4 0 0 1 4 4 4 4 0 0 1-2.5 3.7L18 20h-3.2l-2.3-7.8H9V20H6V4zm3 2.4v3.8h4a1.6 1.6 0 0 0 1.6-1.9A1.6 1.6 0 0 0 13 6.4H9z" fill="white"/></svg></span><span class="logo-text">EmployeeOS</span></a>
+      <ul class="nav-links" role="list">
+        <li class="nav-item has-dropdown">
+          <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Products <span class="chevron">&#8964;</span></button>
+          <div class="mega-menu mega-products" role="menu">
+            <div class="mega-body">
+              <div class="mega-left">
+                <p class="mega-section-label">GLOBAL EMPLOYMENT</p>
+                <div class="mega-cols">
+                  <a href="global-payroll.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
+                    <div><strong>Global Payroll</strong><p>Run compliant payroll easily</p></div>
+                  </a>
+                  <a href="employer-of-record.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+                    <div><strong>Employer of Record</strong><p>Expand globally with zero entity cost</p></div>
+                  </a>
+                  <a href="contractor-of-record.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
+                    <div><strong>Contractor of Record</strong><p>Compliantly engage contractors worldwide</p></div>
+                  </a>
+                  <a href="contractor-management.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                    <div><strong>Contractor Management</strong><p>Onboard and manage contractors globally</p></div>
+                  </a>
+                  <a href="peo.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+                    <div><strong>PEO</strong><p>Outsource complex employment tasks</p></div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-right mega-right-services">
+                <p class="mega-section-label">SERVICES</p>
+                <ul>
+                  <li><a href="ask-an-expert.html">Ask an Expert</a></li>
+                  <li><a href="background-checks.html">Background Checks</a></li>
+                  <li><a href="compliance-watchtower.html">Compliance Watchtower</a></li>
+                  <li><a href="device-management.html">Device Management</a></li>
+                  <li><a href="entity-setup.html">Entity Setup</a></li>
+                  <li><a href="mobility-relocation.html">Mobility &amp; Relocation</a></li>
+                  <li><a href="benefits.html">Benefits</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Resources <span
+              class="chevron">&#8964;</span></button>
+          <div class="mega-menu mega-resources" role="menu">
+            <div class="mega-body">
+              <div class="mega-left">
+                <p class="mega-section-label">RESOURCE LIBRARY</p>
+                <div class="mega-cols">
+                  <a href="blog.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5V4.5z"/></svg></span>
+                    <div><strong>Blog</strong><p>Latest global employment insights &amp; guides</p></div>
+                  </a>
+                  <a href="ask-an-expert.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+                    <div><strong>Ask an Expert</strong><p>Get answers to complex global HR questions</p></div>
+                  </a>
+                  <a href="compliance-watchtower.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                    <div><strong>Compliance Watchtower</strong><p>Stay ahead of evolving global labor laws</p></div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-right">
+                <p class="mega-section-label">FEATURED BLOG</p>
+                <a href="blog/ultimate-eor-guide.html" class="mega-case-card" role="menuitem">
+                  <div class="mega-case-img blog-post-img">
+                    <img src="images/blog/eor-guide.png" alt="Featured: EOR Guide" style="width:100%;height:100%;object-fit:cover;" />
+                  </div>
+                  <span class="mega-case-text">The Ultimate Guide to Employer of Record (EOR) hiring in 2026.</span>
+                  <span class="mega-learn-more">Read article →</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-lang"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>EN</span><span class="chevron">&#8964;</span></div>
+        <a href="#demo" class="btn-nav-demo">Book a demo</a>
+      </div>
+      <button class="nav-mobile-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="svc-hero" id="hero">
+    <div class="container svc-hero-inner">
+      <div class="svc-hero-text">
+        <p class="svc-eyebrow">Real-Time Compliance Intelligence</p>
+        <h1 class="svc-hero-h1">Compliance Watchtower</h1>
+        <p class="svc-hero-sub">Stay ahead of changing labor laws across 90+ countries. EmployeeOS monitors regulatory updates and alerts you to changes that affect your workforce — before they become violations.</p>
+        <div class="svc-hero-ctas">
+          <a href="#demo" class="svc-hero-cta">See it in action &rarr;</a>
+          <a href="#features" class="svc-hero-cta-outline">Learn more</a>
+        </div>
+      </div>
+      <div class="svc-hero-visual" aria-hidden="true" style="margin-bottom: -5rem; display: flex; align-items: flex-end;">
+        <img src="images/ComplianceHero.png" alt="Compliance Watchtower Dashboard" class="svc-hero-img" style="max-width: 100%; height: auto; display: block;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="svc-features section" id="features">
+    <div class="container">
+      <h2 class="gp-section-h2">Always one step ahead of the law</h2>
+      <p class="gp-section-sub">Compliance isn't static — regulations change constantly. Watchtower keeps your team informed automatically.</p>
+      <div class="svc-feature-grid">
+        <div class="svc-feature-card"><span class="svc-feature-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></span><h3>Daily Regulatory Monitoring</h3><p>Our legal team tracks labor law changes, minimum wage updates, statutory leave amendments, and tax code revisions across 90+ countries every single day.</p></div>
+        <div class="svc-feature-card"><span class="svc-feature-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></span><h3>Impact Analysis</h3><p>Each alert includes a clear assessment of which employees are affected, what actions are required, and deadlines to avoid penalties — no legal interpretation needed.</p></div>
+        <div class="svc-feature-card"><span class="svc-feature-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"/></svg></span><h3>Automated Alerts</h3><p>Get notified instantly via dashboard, email, or Slack when a regulation changes that affects your team — with one-click links to the updated policy in your account.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="svc-steps section" id="how-it-works">
+    <div class="container svc-steps-inner">
+      <div class="svc-steps-text">
+        <h2>From regulatory change to resolved action in hours</h2>
+        <p>Compliance Watchtower doesn't just inform — it guides you through every required action with step-by-step resolution workflows.</p>
+        <div class="svc-step-list">
+          <div class="svc-step"><span class="svc-step-num">1</span><div><strong>Change detected</strong><p>Our legal monitoring team identifies a regulatory change in any of your active countries and classifies its severity and scope.</p></div></div>
+          <div class="svc-step"><span class="svc-step-num">2</span><div><strong>Impact mapped to your workforce</strong><p>The platform automatically identifies which employees, contractors, or payroll cycles are affected based on your live org data.</p></div></div>
+          <div class="svc-step"><span class="svc-step-num">3</span><div><strong>Action plan delivered</strong><p>You receive a clear action plan with required steps, deadlines, and direct links to make changes — often with one-click resolution.</p></div></div>
+        </div>
+      </div>
+      <div class="svc-steps-visual">
+        <div class="svc-stat-row">
+          <div class="svc-stat-box"><strong>90+</strong><span>Countries monitored</span></div>
+          <div class="svc-stat-box"><strong>Daily</strong><span>Update frequency</span></div>
+        </div>
+        <div class="svc-stat-row">
+          <div class="svc-stat-box"><strong>&lt;4h</strong><span>Alert delivery time</span></div>
+          <div class="svc-stat-box"><strong>Zero</strong><span>Missed violations</span></div>
+        </div>
+        <p style="font-size:.8125rem;color:#6b7280;text-align:center;margin-top:.5rem;">Included with all EmployeeOS plans — no extra setup required</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="svc-cta-banner" id="cta">
+    <div class="container svc-cta-inner">
+      <h2>Stop discovering compliance issues after the fact</h2>
+      <p>Compliance Watchtower monitors the regulatory landscape so you can focus on building your team.</p>
+      <a href="#demo" class="svc-cta-btn">See it in action &rarr;</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer"><div class="container footer-inner">
+    <div class="footer-col footer-brand"><a href="index.html" class="nav-logo"><span class="logo-mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 4h7a4 4 0 0 1 4 4 4 4 0 0 1-2.5 3.7L18 20h-3.2l-2.3-7.8H9V20H6V4zm3 2.4v3.8h4a1.6 1.6 0 0 0 1.6-1.9A1.6 1.6 0 0 0 13 6.4H9z" fill="white"/></svg></span><span class="logo-text">EmployeeOS</span></a><p class="footer-tagline">Global employment infrastructure for modern businesses.</p><p class="footer-copy">&copy; 2026 EmployeeOS Technology, Inc. All rights reserved.</p></div>
+    <div class="footer-col"><h4>Products</h4><ul><li><a href="global-payroll.html">Global Payroll</a></li><li><a href="employer-of-record.html">Employer of Record</a></li><li><a href="contractor-management.html">Contractor Management</a></li><li><a href="benefits.html">Benefits</a></li><li><a href="peo.html">PEO</a></li></ul></div>
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="ask-an-expert.html">Ask an Expert</a></li><li><a href="background-checks.html">Background Checks</a></li><li><a href="compliance-watchtower.html">Compliance Watchtower</a></li><li><a href="device-management.html">Device Management</a></li><li><a href="entity-setup.html">Entity Setup</a></li><li><a href="mobility-relocation.html">Mobility &amp; Relocation</a></li></ul></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="#">About</a></li><li><a href="#">Careers</a></li><li><a href="blog.html">Blog</a></li><li><a href="#">Press</a></li></ul></div>
+    <div class="footer-col"><h4>Legal</h4><ul><li><a href="#">Terms of Service</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Cookie Policy</a></li></ul></div>
+  </div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
+

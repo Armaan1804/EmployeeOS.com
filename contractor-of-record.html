@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contractor of Record (COR) — Outsource Contractor Compliance | EmployeeOS</title>
+  <meta name="description" content="Outsource contractor compliance and risk. EmployeeOS COR contracts directly with your global contractors, offering uncapped indemnity and AI misclassification protections." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="product-page.css" />
+  <style>
+    /* Page specific theme overrides for COR - Deep Blue/Navy theme */
+    .cor-theme-hero {
+      background:
+        radial-gradient(ellipse 80% 80% at 70% 40%, rgba(37, 99, 235, 0.4) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 60% at 30% 70%, rgba(30, 58, 138, 0.3) 0%, transparent 60%),
+        linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px),
+        #0b1320;
+      background-size: auto, auto, 28px 28px, 28px 28px, auto;
+    }
+    .cor-theme-badge {
+      background: #e0f2fe !important;
+      color: #0369a1 !important;
+    }
+    .cor-theme-btn {
+      background: #2563eb !important;
+      color: white !important;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35) !important;
+    }
+    .cor-theme-btn:hover {
+      background: #1d4ed8 !important;
+    }
+    .cor-theme-text-accent {
+      color: #2563eb !important;
+    }
+    .cor-theme-btn-nav-demo {
+      background: #2563eb !important;
+    }
+    .cor-theme-btn-nav-demo:hover {
+      background: #1d4ed8 !important;
+    }
+
+    /* Sticky Bar COR Blue Theme */
+    .cor-theme-sticky-bar {
+      background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%) !important;
+      box-shadow: 0 20px 50px rgba(37, 99, 235, 0.45), 0 8px 24px rgba(0, 0, 0, 0.3) !important;
+    }
+    .cor-theme-sticky-bar .gp-sticky-btn-primary {
+      color: #2563eb !important;
+    }
+    .cor-theme-sticky-bar .gp-sticky-btn-primary:hover {
+      background: #eff6ff !important;
+      color: #1d4ed8 !important;
+    }
+
+    /* Active Demo Tab & Accent Overrides for COR */
+    .gp-demo-tab.active {
+      color: #2563eb !important;
+    }
+    .gp-tag-pill {
+      background: rgba(37, 99, 235, 0.1) !important;
+      color: #2563eb !important;
+      border: 1.5px solid #bfdbfe !important;
+    }
+    .gp-check {
+      background: #2563eb !important;
+      color: #ffffff !important;
+    }
+    .gp-check-g {
+      color: #2563eb !important;
+    }
+    .gp-cta-outline {
+      color: #2563eb !important;
+      border-color: #2563eb !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-wrapper" id="navbar">
+    <nav class="nav-inner container">
+      <a href="index.html" class="nav-logo" aria-label="EmployeeOS Home">
+        <span class="logo-mark">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M6 4h7a4 4 0 0 1 4 4 4 4 0 0 1-2.5 3.7L18 20h-3.2l-2.3-7.8H9V20H6V4zm3 2.4v3.8h4a1.6 1.6 0 0 0 1.6-1.9A1.6 1.6 0 0 0 13 6.4H9z"
+              fill="white" />
+          </svg>
+        </span>
+        <span class="logo-text">EmployeeOS</span>
+      </a>
+      <ul class="nav-links" role="list">
+
+        <!-- PRODUCTS -->
+        <li class="nav-item has-dropdown">
+          <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Products <span
+              class="chevron">&#8964;</span></button>
+          <div class="mega-menu mega-products" role="menu">
+            <div class="mega-body">
+              <div class="mega-left">
+                <p class="mega-section-label">GLOBAL EMPLOYMENT</p>
+                <div class="mega-cols">
+                  <a href="global-payroll.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
+                    <div><strong>Global Payroll</strong><p>Run compliant payroll easily</p></div>
+                  </a>
+                  <a href="employer-of-record.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+                    <div><strong>Employer of Record</strong><p>Expand globally with zero entity cost</p></div>
+                  </a>
+                  <a href="contractor-of-record.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
+                    <div><strong>Contractor of Record</strong><p>Compliantly engage contractors worldwide</p></div>
+                  </a>
+                  <a href="contractor-management.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                    <div><strong>Contractor Management</strong><p>Onboard and manage contractors globally</p></div>
+                  </a>
+                  <a href="peo.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+                    <div><strong>PEO</strong><p>Outsource complex employment tasks</p></div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-right mega-right-services">
+                <p class="mega-section-label">SERVICES</p>
+                <ul>
+                  <li><a href="ask-an-expert.html">Ask an Expert</a></li>
+                  <li><a href="background-checks.html">Background Checks</a></li>
+                  <li><a href="compliance-watchtower.html">Compliance Watchtower</a></li>
+                  <li><a href="device-management.html">Device Management</a></li>
+                  <li><a href="entity-setup.html">Entity Setup</a></li>
+                  <li><a href="mobility-relocation.html">Mobility &amp; Relocation</a></li>
+                  <li><a href="benefits.html">Benefits</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Resources <span
+              class="chevron">&#8964;</span></button>
+          <div class="mega-menu mega-resources" role="menu">
+            <div class="mega-body">
+              <div class="mega-left">
+                <p class="mega-section-label">RESOURCE LIBRARY</p>
+                <div class="mega-cols">
+                  <a href="blog.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5V4.5z"/></svg></span>
+                    <div><strong>Blog</strong><p>Latest global employment insights &amp; guides</p></div>
+                  </a>
+                  <a href="ask-an-expert.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+                    <div><strong>Ask an Expert</strong><p>Get answers to complex global HR questions</p></div>
+                  </a>
+                  <a href="compliance-watchtower.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                    <div><strong>Compliance Watchtower</strong><p>Stay ahead of evolving global labor laws</p></div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-right">
+                <p class="mega-section-label">FEATURED BLOG</p>
+                <a href="blog/ultimate-eor-guide.html" class="mega-case-card" role="menuitem">
+                  <div class="mega-case-img blog-post-img">
+                    <img src="images/blog/eor-guide.png" alt="Featured: EOR Guide" style="width:100%;height:100%;object-fit:cover;" />
+                  </div>
+                  <span class="mega-case-text">The Ultimate Guide to Employer of Record (EOR) hiring in 2026.</span>
+                  <span class="mega-learn-more">Read article →</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-lang">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <path
+              d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+          <span>EN</span>
+          <span class="chevron">&#8964;</span>
+        </div>
+        <a href="#demo" class="btn-nav-demo cor-theme-btn-nav-demo">Book a demo</a>
+      </div>
+      <button class="nav-mobile-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="gp-hero cor-theme-hero" id="hero">
+    <div class="container gp-hero-inner">
+      <div class="gp-hero-text">
+        <p class="gp-eyebrow">Assured Compliance. Uncapped Indemnity.</p>
+        <h1 class="gp-hero-h1">Outsource contractor<br/>compliance and risk.</h1>
+        <p class="gp-hero-sub">Engage global contractors with confidence. EmployeeOS Contractor of Record (COR) acts as the direct contracting party, shielding your business with uncapped indemnity and AI misclassification tools.</p>
+        <a href="#demo" class="gp-hero-cta cor-theme-text-accent">Book a demo</a>
+      </div>
+      <div class="gp-hero-visual">
+        <img src="images/CORhero.png" alt="EmployeeOS Contractor of Record" class="gp-hero-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGO BAR -->
+  <section class="gp-logo-bar">
+    <div class="container">
+      <p class="gp-logo-label" style="color: #2563eb;">GLOBAL TEAMS PROTECTED BY EMPLOYEEOS COR</p>
+      <div class="logo-track-wrap">
+        <div class="logo-track">
+          <span class="plogo">GitLab</span><span class="plogo">MIZUHO</span>
+          <span class="plogo">Lovable</span><span class="plogo">box</span>
+          <span class="plogo">miro</span><span class="plogo">KFC</span>
+          <span class="plogo">Heineken</span><span class="plogo">BYD</span>
+          <span class="plogo">Vercel</span><span class="plogo">ANTHROPIC</span>
+          <span class="plogo">DATADOG</span><span class="plogo">Mercury</span>
+          <span class="plogo">GitLab</span><span class="plogo">MIZUHO</span>
+          <span class="plogo">Lovable</span><span class="plogo">box</span>
+          <span class="plogo">miro</span><span class="plogo">KFC</span>
+          <span class="plogo">Heineken</span><span class="plogo">BYD</span>
+          <span class="plogo">Vercel</span><span class="plogo">ANTHROPIC</span>
+          <span class="plogo">DATADOG</span><span class="plogo">Mercury</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THREE FEATURES PILLARS -->
+  <section class="gp-features-overview section" id="features">
+    <div class="container">
+      <h2 class="gp-section-h2">Shield your business with Contractor of Record (COR)</h2>
+      <div class="gp-pillars">
+        <div class="gp-pillar">
+          <span class="gp-pillar-ico" style="background: #2563eb;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 17v-5h6v5M9 12V9a3 3 0 0 1 6 0v3"/></svg>
+          </span>
+          <h3>Direct engagement</h3>
+          <p>EmployeeOS signs the direct contract with the worker. We act as the employer of record equivalent for contractors, absorbing direct classification liability.</p>
+        </div>
+        <div class="gp-pillar">
+          <span class="gp-pillar-ico" style="background: #2563eb;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </span>
+          <h3>Uncapped indemnity</h3>
+          <p>Unlike other platforms that offer capped indemnity, EmployeeOS covers unlimited financial and legal costs in worker status disputes.</p>
+        </div>
+        <div class="gp-pillar">
+          <span class="gp-pillar-ico" style="background: #2563eb;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </span>
+          <h3>AI risk scanner</h3>
+          <p>Continuous monitoring of contractor relationship behaviors, email patterns, and schedules to detect and report misclassification signals early.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY COR STATS -->
+  <section class="gp-why section" id="why">
+    <div class="container">
+      <h2 class="gp-section-h2">Why EmployeeOS COR?</h2>
+      <div class="gp-stats-grid">
+        <div class="gp-stat-card" style="border-top: 4px solid #2563eb;">
+          <span class="gp-stat-value" style="color: #2563eb;">100%</span>
+          <h3 class="gp-stat-label">Worker classification shield</h3>
+          <p>We contract directly with the workers, removing misclassification risks from your business completely.</p>
+        </div>
+        <div class="gp-stat-card" style="border-top: 4px solid #2563eb;">
+          <span class="gp-stat-value" style="color: #2563eb;">Uncapped</span>
+          <h3 class="gp-stat-label">Legal and financial indemnity</h3>
+          <p>We stand fully behind our contracts, offering uncapped compensation in local compliance disputes.</p>
+        </div>
+        <div class="gp-stat-card" style="border-top: 4px solid #2563eb;">
+          <span class="gp-stat-value" style="color: #2563eb;">2.3 Days</span>
+          <h3 class="gp-stat-label">Average transition time</h3>
+          <p>Quickly migrate your global contractors to our compliant Contractor of Record program.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT DEMO -->
+  <section class="gp-demo-section section" id="demo-tour">
+    <div class="gp-demo-sticky-wrapper">
+      <div class="container gp-demo-inner">
+        <div class="gp-demo-gallery">
+          <div class="gp-demo-tabs" role="tablist">
+            <button class="gp-demo-tab active" onclick="switchMockpay(1, this)" id="tab-btn-1">Risk Audits</button>
+            <button class="gp-demo-tab" onclick="switchMockpay(2, this)" id="tab-btn-2">Indemnity Shield</button>
+            <button class="gp-demo-tab" onclick="switchMockpay(3, this)" id="tab-btn-3">IP Protection</button>
+          </div>
+          <div class="gp-demo-img-frame">
+            <div class="gp-mockpay-track" id="mockpayTrack" style="transform: translateX(0%);">
+              <img src="images/mockpay1.png" alt="Risk Audits" class="gp-mockpay-slide">
+              <img src="images/mockpay2.png" alt="Indemnity Shield" class="gp-mockpay-slide">
+              <img src="images/mockpay3.png" alt="IP Protection" class="gp-mockpay-slide">
+            </div>
+          </div>
+        </div>
+        <div class="gp-demo-text-card" id="mockpayTextCard" style="opacity: 1; transform: translateY(0px);">
+          <span class="gp-tag-pill" id="mockpayTag" style="background: rgba(37,99,235,0.1); color: #2563eb; border-color: #bfdbfe;">AI-powered</span>
+          <h2 id="mockpayTitle">Continuous compliance via real-time audits</h2>
+          <p id="mockpayDesc">Our algorithms constantly review contractor engagement parameters (hours, invoices, tool accesses) to ensure workers meet local criteria.</p>
+          <ul class="gp-ai-list" id="mockpayList">
+            <li><span class="gp-check" style="background: #2563eb; color: #ffffff;">✓</span> Automatic behavioral flag notifications</li>
+            <li><span class="gp-check" style="background: #2563eb; color: #ffffff;">✓</span> Compliance scoring updated dynamically</li>
+            <li><span class="gp-check" style="background: #2563eb; color: #ffffff;">✓</span> Automatic classification questionnaires for workers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- TESTIMONIALS -->
+  <section class="gp-testimonial section" id="testimonials">
+    <div class="container">
+      <h2 class="gp-section-h2">What compliance leaders say</h2>
+      <div class="gp-testimonial-grid">
+        <blockquote class="gp-quote featured" style="border-top-color: #2563eb;">
+          <div class="gp-quote-stars" style="color: #2563eb;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <p>&#x201C;We work with over 400 global contractors. Managing the compliance burden in-house would have required an army of lawyers. EmployeeOS COR gave us uncapped indemnity and total peace of mind.&#x201D;</p>
+          <footer>
+            <img src="https://i.pravatar.cc/44?img=12" alt="Sarah Chen" />
+            <div>
+              <strong>Sarah Jenkins</strong>
+              <span>Head of Legal, TechGrowth Inc.</span>
+            </div>
+          </footer>
+        </blockquote>
+        <blockquote class="gp-quote featured" style="border-top-color: #2563eb;">
+          <div class="gp-quote-stars" style="color: #2563eb;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <p>&#x201C;We were audited by local authorities regarding our worker classifications in Europe. Because we were using EmployeeOS COR, they handled the response and defense completely. The audit passed with zero issues.&#x201D;</p>
+          <footer>
+            <img src="https://i.pravatar.cc/44?img=52" alt="Amador Pilapil" />
+            <div>
+              <strong>Amador Pilapil</strong>
+              <span>Head of People, Fluz</span>
+            </div>
+          </footer>
+        </blockquote>
+        <blockquote class="gp-quote featured" style="border-top-color: #2563eb;">
+          <div class="gp-quote-stars" style="color: #2563eb;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <p>&#x201C;IP transfers across border jurisdictions can be extremely complex. EmployeeOS IP Guard standardizes the assignment process so our codebases are completely secure.&#x201D;</p>
+          <footer>
+            <img src="https://i.pravatar.cc/44?img=15" alt="Mehdi Boudoukhane" />
+            <div>
+              <strong>Mehdi Boudoukhane</strong>
+              <span>Founder &amp; CEO, Cycle</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FAQ -->
+  <section class="gp-faq section" id="faq">
+    <div class="container gp-faq-inner">
+      <h2 class="gp-section-h2">Frequently Asked Questions</h2>
+      <div class="gp-faq-list">
+        <div class="gp-faq-item open">
+          <button class="gp-faq-q" aria-expanded="true">What is a Contractor of Record (COR)?</button>
+          <div class="gp-faq-a"><p>Contractor of Record is a compliance-focused service where EmployeeOS contracts directly with your global freelancers. We handle contract generation, onboarding, payment processing, tax documentation, and compliance audits while acting as a legal shield between your company and contractor status claims.</p></div>
+        </div>
+        <div class="gp-faq-item">
+          <button class="gp-faq-q" aria-expanded="false">How does uncapped indemnity protect my business?</button>
+          <div class="gp-faq-a"><p>Unlike competitors that limit their indemnity liability to $10,000 or $50,000, EmployeeOS COR offers **uncapped indemnity**. If a local labor or tax authority challenges the classification of a contractor under our program, EmployeeOS handles the entire legal defense, assumes all representation, and covers all fines and back taxes directly with zero cost to you.</p></div>
+        </div>
+        <div class="gp-faq-item">
+          <button class="gp-faq-q" aria-expanded="false">What is the difference between EOR and COR?</button>
+          <div class="gp-faq-a"><p>An **EOR (Employer of Record)** is used to hire full-time employees in foreign countries without entities, managing full employee payroll, benefits, and local statutory rights. A **COR (Contractor of Record)** is designed for independent contractors, enabling safe engagement without employee-like schedules or liabilities, and protecting your firm from misclassification audits.</p></div>
+        </div>
+        <div class="gp-faq-item">
+          <button class="gp-faq-q" aria-expanded="false">What is IP Guard?</button>
+          <div class="gp-faq-a"><p>IP Guard is our proprietary intellectual property assignment framework. EOR and contract laws differ globally, and standard contracts often leave ownership gaps in local courts. IP Guard secures intellectual property assignment from the worker to EmployeeOS, and immediately transfers all titles, copyrights, and patents to your company upon payment release.</p></div>
+        </div>
+        <div class="gp-faq-item">
+          <button class="gp-faq-q" aria-expanded="false">How does the AI misclassification audit tool work?</button>
+          <div class="gp-faq-a"><p>It runs in the background, analyzing working schedules, tool logins, invoice structures, and survey inputs to ensure contractors operate independently. If it detects employee-like patterns (e.g., sole income dependency, fixed hours), it alerts your compliance team and suggests adjustments to maintain safe classification.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section class="gp-bottom-cta" id="bottom-cta" style="background: linear-gradient(135deg, #091d3f 0%, #1e40af 50%, #1d4ed8 100%);">
+    <div class="container gp-bottom-cta-inner">
+      <h2>Ready to eliminate contractor classification risks?</h2>
+      <p>Talk to our compliance experts today to move your international contractors to our secure COR framework.</p>
+      <div class="gp-bottom-actions">
+        <a href="#demo" class="gp-bottom-btn-primary" style="color: #2563eb;">Book a demo</a>
+        <a href="pricing.html" class="gp-bottom-btn-outline">See pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 4h7a4 4 0 0 1 4 4 4 4 0 0 1-2.5 3.7L18 20h-3.2l-2.3-7.8H9V20H6V4zm3 2.4v3.8h4a1.6 1.6 0 0 0 1.6-1.9A1.6 1.6 0 0 0 13 6.4H9z" fill="white"/></svg></span>
+          <span class="logo-text">EmployeeOS</span>
+        </a>
+        <p class="footer-tagline">Global employment infrastructure for modern businesses.</p>
+        <p class="footer-copy">&#xa9; 2026 EmployeeOS Technology, Inc. All rights reserved.</p>
+      </div>
+      <div class="footer-col"><h4>Products</h4><ul>
+        <li><a href="global-payroll.html">Global Payroll</a></li>
+        <li><a href="employer-of-record.html">Employer of Record</a></li>
+        <li><a href="contractor-management.html">Contractor Management</a></li>
+        <li><a href="#">HR Management</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="peo.html">PEO</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Company</h4><ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Partners</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Resources</h4><ul>
+        <li><a href="#">Country Guides</a></li>
+        <li><a href="#">HR Glossary</a></li>
+        <li><a href="#">Cost Calculator</a></li>
+        <li><a href="#">Webinars</a></li>
+        <li><a href="#">Customer Stories</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+        <li><a href="#">Security</a></li>
+      </ul></div>
+    </div>
+  </footer>
+
+  <!-- ── FLOATING STICKY BOTTOM BAR ── -->
+  <aside class="gp-sticky-bar cor-theme-sticky-bar" id="gpStickyBar" aria-label="Quick Actions Bar">
+    <div class="gp-sticky-bar-content">
+      <div class="gp-sticky-bar-icon" style="background: rgba(255,255,255,0.2);">❖</div>
+      <div class="gp-sticky-bar-text">
+        <h4>Ready to eliminate contractor classification risks?</h4>
+        <p>Talk to our compliance experts today to move your international contractors to our secure COR framework.</p>
+      </div>
+    </div>
+    <div class="gp-sticky-bar-actions">
+      <a href="#demo" class="gp-sticky-btn-primary">Book a demo</a>
+      <a href="pricing.html" class="gp-sticky-btn-secondary">See pricing</a>
+      <button class="gp-sticky-close" onclick="document.getElementById('gpStickyBar').classList.add('hidden')" aria-label="Close bar">&times;</button>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+  <script src="contractor-of-record.js"></script>
+</body>
+</html>
+

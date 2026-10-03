@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Employer Organization (PEO) — Scale your US Team | EmployeeOS</title>
+  <meta name="description" content="Access premium healthcare, manage state-by-state compliance, and process payroll across all 50 states. Access large-group benefits at lower rates." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="product-page.css" />
+  <style>
+    /* Page specific theme overrides for PEO - Emerald/Green theme */
+    .peo-theme-hero {
+      background:
+        radial-gradient(ellipse 80% 80% at 70% 40%, rgba(16, 185, 129, 0.4) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 60% at 30% 70%, rgba(4, 120, 87, 0.3) 0%, transparent 60%),
+        linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px),
+        #05150e;
+      background-size: auto, auto, 28px 28px, 28px 28px, auto;
+    }
+    .peo-theme-badge {
+      background: #f0fdf4 !important;
+      color: #16a34a !important;
+    }
+    .peo-theme-btn {
+      background: #16a34a !important;
+      color: white !important;
+      box-shadow: 0 4px 14px rgba(22, 163, 74, 0.35) !important;
+    }
+    .peo-theme-btn:hover {
+      background: #15803d !important;
+    }
+    .peo-theme-text-accent {
+      color: #16a34a !important;
+    }
+    .peo-theme-btn-nav-demo {
+      background: #16a34a !important;
+    }
+    .peo-theme-btn-nav-demo:hover {
+      background: #15803d !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-wrapper" id="navbar">
+    <nav class="nav-inner container">
+      <a href="index.html" class="nav-logo" aria-label="EmployeeOS Home">
+        <span class="logo-mark">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M6 4h7a4 4 0 0 1 4 4 4 4 0 0 1-2.5 3.7L18 20h-3.2l-2.3-7.8H9V20H6V4zm3 2.4v3.8h4a1.6 1.6 0 0 0 1.6-1.9A1.6 1.6 0 0 0 13 6.4H9z"
+              fill="white" />
+          </svg>
+        </span>
+        <span class="logo-text">EmployeeOS</span>
+      </a>
+      <ul class="nav-links" role="list">
+
+        <!-- PRODUCTS -->
+        <li class="nav-item has-dropdown">
+          <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Products <span
+              class="chevron">&#8964;</span></button>
+          <div class="mega-menu mega-products" role="menu">
+            <div class="mega-body">
+              <div class="mega-left">
+                <p class="mega-section-label">GLOBAL EMPLOYMENT</p>
+                <div class="mega-cols">
+                  <a href="global-payroll.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
+                    <div><strong>Global Payroll</strong><p>Run compliant payroll easily</p></div>
+                  </a>
+                  <a href="employer-of-record.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+                    <div><strong>Employer of Record</strong><p>Expand globally with zero entity cost</p></div>
+                  </a>
+                  <a href="contractor-of-record.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
+                    <div><strong>Contractor of Record</strong><p>Compliantly engage contractors worldwide</p></div>
+                  </a>
+                  <a href="contractor-management.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                    <div><strong>Contractor Management</strong><p>Onboard and manage contractors globally</p></div>
+                  </a>
+                  <a href="peo.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+                    <div><strong>PEO</strong><p>Outsource complex employment tasks</p></div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-right mega-right-services">
+                <p class="mega-section-label">SERVICES</p>
+                <ul>
+                  <li><a href="ask-an-expert.html">Ask an Expert</a></li>
+                  <li><a href="background-checks.html">Background Checks</a></li>
+                  <li><a href="compliance-watchtower.html">Compliance Watchtower</a></li>
+                  <li><a href="device-management.html">Device Management</a></li>
+                  <li><a href="entity-setup.html">Entity Setup</a></li>
+                  <li><a href="mobility-relocation.html">Mobility &amp; Relocation</a></li>
+                  <li><a href="benefits.html">Benefits</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Resources <span
+              class="chevron">&#8964;</span></button>
+          <div class="mega-menu mega-resources" role="menu">
+            <div class="mega-body">
+              <div class="mega-left">
+                <p class="mega-section-label">RESOURCE LIBRARY</p>
+                <div class="mega-cols">
+                  <a href="blog.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5V4.5z"/></svg></span>
+                    <div><strong>Blog</strong><p>Latest global employment insights &amp; guides</p></div>
+                  </a>
+                  <a href="ask-an-expert.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+                    <div><strong>Ask an Expert</strong><p>Get answers to complex global HR questions</p></div>
+                  </a>
+                  <a href="compliance-watchtower.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                    <div><strong>Compliance Watchtower</strong><p>Stay ahead of evolving global labor laws</p></div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-right">
+                <p class="mega-section-label">FEATURED BLOG</p>
+                <a href="blog/ultimate-eor-guide.html" class="mega-case-card" role="menuitem">
+                  <div class="mega-case-img blog-post-img">
+                    <img src="images/blog/eor-guide.png" alt="Featured: EOR Guide" style="width:100%;height:100%;object-fit:cover;" />
+                  </div>
+                  <span class="mega-case-text">The Ultimate Guide to Employer of Record (EOR) hiring in 2026.</span>
+                  <span class="mega-learn-more">Read article →</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-lang">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <path
+              d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+          <span>EN</span>
+          <span class="chevron">&#8964;</span>
+        </div>
+        <a href="#demo" class="btn-nav-demo peo-theme-btn-nav-demo">Book a demo</a>
+      </div>
+      <button class="nav-mobile-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="gp-hero peo-theme-hero" id="hero">
+    <div class="container gp-hero-inner">
+      <div class="gp-hero-text">
+        <p class="gp-eyebrow">Professional Employer Organization</p>
+        <h1 class="gp-hero-h1">Scale your US team.<br/>Leave the HR complexity to us.</h1>
+        <p class="gp-hero-sub">Access premium health benefits, manage state-by-state tax registrations, and process payroll across all 50 states. EmployeeOS PEO acts as your dedicated co-employer so you can focus on growth.</p>
+        <a href="#demo" class="gp-hero-cta peo-theme-text-accent">Book a demo</a>
+      </div>
+      <div class="gp-hero-visual">
+        <img src="images/PEOhero.png" alt="EmployeeOS Professional Employer Organization" class="gp-hero-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGO BAR -->
+  <section class="gp-logo-bar">
+    <div class="container">
+      <p class="gp-logo-label" style="color: #16a34a;">GLOBAL TEAMS MANAGED BY EMPLOYEEOS US PEO</p>
+      <div class="logo-track-wrap">
+        <div class="logo-track">
+          <span class="plogo">GitLab</span><span class="plogo">MIZUHO</span>
+          <span class="plogo">Lovable</span><span class="plogo">box</span>
+          <span class="plogo">miro</span><span class="plogo">KFC</span>
+          <span class="plogo">Heineken</span><span class="plogo">BYD</span>
+          <span class="plogo">Vercel</span><span class="plogo">ANTHROPIC</span>
+          <span class="plogo">DATADOG</span><span class="plogo">Mercury</span>
+          <span class="plogo">GitLab</span><span class="plogo">MIZUHO</span>
+          <span class="plogo">Lovable</span><span class="plogo">box</span>
+          <span class="plogo">miro</span><span class="plogo">KFC</span>
+          <span class="plogo">Heineken</span><span class="plogo">BYD</span>
+          <span class="plogo">Vercel</span><span class="plogo">ANTHROPIC</span>
+          <span class="plogo">DATADOG</span><span class="plogo">Mercury</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THREE FEATURES PILLARS -->
+  <section class="gp-features-overview section" id="features">
+    <div class="container">
+      <h2 class="gp-section-h2">Access comprehensive co-employment support</h2>
+      <div class="gp-pillars">
+        <div class="gp-pillar">
+          <span class="gp-pillar-ico" style="background: #16a34a;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </span>
+          <h3>50-state tax management</h3>
+          <p>We handle state unemployment tax (SUTA) registrations, file local withholdings, and report payroll tax allocations across all 50 states.</p>
+        </div>
+        <div class="gp-pillar">
+          <span class="gp-pillar-ico" style="background: #16a34a;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8M8 12h8"/></svg>
+          </span>
+          <h3>Large-group benefits</h3>
+          <p>Leverage our scale to offer blue-chip medical plans (Aetna, BCBS, Kaiser) alongside retirement 401(k) structures at lower rates.</p>
+        </div>
+        <div class="gp-pillar">
+          <span class="gp-pillar-ico" style="background: #16a34a;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </span>
+          <h3>HR compliance experts</h3>
+          <p>Get direct access to certified HR professionals who advise you on state labor guides, employee termination compliance, and workplace policies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY STATS -->
+  <section class="gp-why section" id="why">
+    <div class="container">
+      <h2 class="gp-section-h2">Why EmployeeOS PEO?</h2>
+      <div class="gp-stats-grid">
+        <div class="gp-stat-card" style="border-top: 4px solid #16a34a;">
+          <span class="gp-stat-value" style="color: #16a34a;">From $99</span>
+          <h3 class="gp-stat-label">Per employee/month</h3>
+          <p>Flat, transparent monthly pricing. Scale your U.S. hiring without entity establishment costs.</p>
+        </div>
+        <div class="gp-stat-card" style="border-top: 4px solid #16a34a;">
+          <span class="gp-stat-value" style="color: #16a34a;">50 States</span>
+          <h3 class="gp-stat-label">Fully covered</h3>
+          <p>Settle payroll and manage local withholdings securely in CA, NY, TX, and all other states.</p>
+        </div>
+        <div class="gp-stat-card" style="border-top: 4px solid #16a34a;">
+          <span class="gp-stat-value" style="color: #16a34a;">Large-Group</span>
+          <h3 class="gp-stat-label">Blue-chip benefits access</h3>
+          <p>Provide medical benefits through top-tier carriers, lowering your premium overhead costs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO SECTION -->
+  <section class="gp-demo-section section peo-theme-demo" id="demo-tour">
+    <div class="gp-demo-sticky-wrapper">
+      <div class="container gp-demo-inner">
+        <div class="gp-demo-gallery">
+          <div class="gp-demo-tabs" role="tablist">
+            <button class="gp-demo-tab active" onclick="switchMockpay(1, this)" id="tab-btn-1">AI-powered</button>
+            <button class="gp-demo-tab" onclick="switchMockpay(2, this)" id="tab-btn-2">Infrastructure</button>
+            <button class="gp-demo-tab" onclick="switchMockpay(3, this)" id="tab-btn-3">Your Team</button>
+          </div>
+          <div class="gp-demo-img-frame">
+            <div class="gp-mockpay-track" id="mockpayTrack">
+              <img src="images/mockpay1.png" alt="AI-powered" class="gp-mockpay-slide">
+              <img src="images/mockpay2.png" alt="Infrastructure" class="gp-mockpay-slide">
+              <img src="images/mockpay3.png" alt="Your Team" class="gp-mockpay-slide">
+            </div>
+          </div>
+        </div>
+        <div class="gp-demo-text-card" id="mockpayTextCard">
+          <span class="gp-tag-pill" id="mockpayTag" style="background: rgba(22,163,74,0.1); color: #16a34a;">AI-powered</span>
+          <h2 id="mockpayTitle">Scalable payroll with AI-powered workflows and automatic payments</h2>
+          <p id="mockpayDesc">EmployeeOS uses intelligent automation to run compliance checks, calculate deductions, and process salary payouts — all without manual intervention.</p>
+          <ul class="gp-ai-list" id="mockpayList">
+            <li><span class="gp-check" style="background: #16a34a; color: #ffffff;">✓</span> Automated compliance check across every jurisdiction</li>
+            <li><span class="gp-check" style="background: #16a34a; color: #ffffff;">✓</span> Automatic tax calculation and deductions</li>
+            <li><span class="gp-check" style="background: #16a34a; color: #ffffff;">✓</span> Direct salary payout in local currency</li>
+            <li><span class="gp-check" style="background: #16a34a; color: #ffffff;">✓</span> Real-time payroll status and audit trail</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- FAQ -->
+  <section class="gp-faq section" id="faq">
+    <div class="container gp-faq-inner">
+      <h2 class="gp-section-h2">Frequently Asked Questions</h2>
+      <div class="gp-faq-list">
+        <div class="gp-faq-item open">
+          <button class="gp-faq-q" aria-expanded="true">What is a PEO (Professional Employer Organization)?</button>
+          <div class="gp-faq-a"><p>A PEO is a co-employment arrangement where EmployeeOS shares legal employment responsibilities with your company. We manage payroll processing, SUTA tax filings, compliance updates, and benefits administration under our corporate FEIN, while you direct the employee's daily roles and milestones.</p></div>
+        </div>
+        <div class="gp-faq-item">
+          <button class="gp-faq-q" aria-expanded="false">What are the prerequisites for using EmployeeOS PEO?</button>
+          <div class="gp-faq-a"><p>To use our PEO, you must have a registered U.S. legal entity, a U.S. corporate bank account, and be billed in USD. If you want to hire U.S. workers but do not have a U.S. entity, you should use our **Employer of Record (EOR)** service instead.</p></div>
+        </div>
+        <div class="gp-faq-item">
+          <button class="gp-faq-q" aria-expanded="false">PEO vs EOR: Which one do I need?</button>
+          <div class="gp-faq-a"><p>**PEO** co-employs workers under your own U.S. business registry, which means you manage direct state entity registrations and retain ultimate employment ownership. **EOR** hires employees directly through EmployeeOS's local entity, meaning you do not need to register a business entity in the worker's state or country.</p></div>
+        </div>
+        <div class="gp-faq-item">
+          <button class="gp-faq-q" aria-expanded="false">What health benefits can I offer under the PEO?</button>
+          <div class="gp-faq-a"><p>Through our co-employment scale, clients gain access to comprehensive large-group medical, dental, and vision insurance pools from top-tier carriers like Aetna and Blue Cross Blue Shield. We also offer 401(k) pension plans, HSA/FSA configurations, and disability coverages at lower group premium rates.</p></div>
+        </div>
+        <div class="gp-faq-item">
+          <button class="gp-faq-q" aria-expanded="false">How are state payroll taxes registered and paid?</button>
+          <div class="gp-faq-a"><p>EmployeeOS co-registers your account with state agencies, calculates required state unemployment (SUTA) and income taxes, processes local withholding payments each cycle, and handles quarterly tax reporting filings. We issue annual tax forms (W-2s) directly to your employees.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section class="gp-bottom-cta" id="bottom-cta" style="background: linear-gradient(135deg, #065f46 0%, #16a34a 50%, #15803d 100%);">
+    <div class="container gp-bottom-cta-inner">
+      <h2>Ready to streamline your US workforce administration?</h2>
+      <p>Consult with our PEO experts to register state SUTA profiles and access premium benefits.</p>
+      <div class="gp-bottom-actions">
+        <a href="#demo" class="gp-bottom-btn-primary" style="color: #16a34a;">Book a demo</a>
+        <a href="pricing.html" class="gp-bottom-btn-outline">See pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 4h7a4 4 0 0 1 4 4 4 4 0 0 1-2.5 3.7L18 20h-3.2l-2.3-7.8H9V20H6V4zm3 2.4v3.8h4a1.6 1.6 0 0 0 1.6-1.9A1.6 1.6 0 0 0 13 6.4H9z" fill="white"/></svg></span>
+          <span class="logo-text">EmployeeOS</span>
+        </a>
+        <p class="footer-tagline">Global employment infrastructure for modern businesses.</p>
+        <p class="footer-copy">&#xa9; 2026 EmployeeOS Technology, Inc. All rights reserved.</p>
+      </div>
+      <div class="footer-col"><h4>Products</h4><ul>
+        <li><a href="global-payroll.html">Global Payroll</a></li>
+        <li><a href="employer-of-record.html">Employer of Record</a></li>
+        <li><a href="contractor-management.html">Contractor Management</a></li>
+        <li><a href="#">HR Management</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="peo.html">PEO</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Company</h4><ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Partners</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Resources</h4><ul>
+        <li><a href="#">Country Guides</a></li>
+        <li><a href="#">HR Glossary</a></li>
+        <li><a href="#">Cost Calculator</a></li>
+        <li><a href="#">Webinars</a></li>
+        <li><a href="#">Customer Stories</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+        <li><a href="#">Security</a></li>
+      </ul></div>
+    </div>
+  </footer>
+
+  <!-- ── FLOATING STICKY BOTTOM BAR ── -->
+  <aside class="gp-sticky-bar peo-theme-sticky-bar" id="gpStickyBar" aria-label="Quick Actions Bar">
+    <div class="gp-sticky-bar-content">
+      <div class="gp-sticky-bar-icon" style="background: rgba(255,255,255,0.2);">❖</div>
+      <div class="gp-sticky-bar-text">
+        <h4>Ready to streamline your US workforce administration?</h4>
+        <p>Consult with our PEO experts to register state SUTA profiles and access premium benefits.</p>
+      </div>
+    </div>
+    <div class="gp-sticky-bar-actions">
+      <a href="#demo" class="gp-sticky-btn-primary" style="color: #16a34a;">Book a demo</a>
+      <a href="pricing.html" class="gp-sticky-btn-secondary">See pricing</a>
+      <button class="gp-sticky-close" onclick="document.getElementById('gpStickyBar').classList.add('hidden')" aria-label="Close bar">&times;</button>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+  <script src="peo.js"></script>
+</body>
+</html>
+

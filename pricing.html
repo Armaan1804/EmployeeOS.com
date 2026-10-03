@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Pricing & Plans — EmployeeOS</title>
+  <meta name="description" content="Transparent, predictable pricing for payroll, leave, attendance, and HR management. Get instant estimate for your team size." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pricing.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-wrapper" id="navbar">
+    <nav class="nav-inner container">
+      <a href="index.html" class="nav-logo" aria-label="EmployeeOS Home">
+        <span class="logo-mark">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 4h7a4 4 0 0 1 4 4 4 4 0 0 1-2.5 3.7L18 20h-3.2l-2.3-7.8H9V20H6V4zm3 2.4v3.8h4a1.6 1.6 0 0 0 1.6-1.9A1.6 1.6 0 0 0 13 6.4H9z" fill="white" />
+          </svg>
+        </span>
+        <span class="logo-text">EmployeeOS</span>
+      </a>
+      <ul class="nav-links" role="list">
+
+        <!-- PRODUCTS -->
+        <li class="nav-item has-dropdown">
+          <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Products <span class="chevron">&#8964;</span></button>
+          <div class="mega-menu mega-products" role="menu">
+            <div class="mega-body">
+              <div class="mega-left">
+                <p class="mega-section-label">GLOBAL EMPLOYMENT</p>
+                <div class="mega-cols">
+                  <a href="global-payroll.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                        <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                      </svg>
+                    </span>
+                    <div><strong>Global Payroll</strong><p>Run compliant payroll easily</p></div>
+                  </a>
+                  <a href="employer-of-record.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                      </svg>
+                    </span>
+                    <div><strong>Employer of Record</strong><p>Expand globally with zero entity cost</p></div>
+                  </a>
+                  <a href="contractor-of-record.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <path d="M3 9h18M9 21V9" />
+                      </svg>
+                    </span>
+                    <div><strong>Contractor of Record</strong><p>Compliantly engage contractors worldwide</p></div>
+                  </a>
+                  <a href="contractor-management.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                      </svg>
+                    </span>
+                    <div><strong>Contractor Management</strong><p>Onboard and manage contractors globally</p></div>
+                  </a>
+                  <a href="peo.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                      </svg>
+                    </span>
+                    <div><strong>PEO</strong><p>Outsource complex employment tasks</p></div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-right mega-right-services">
+                <p class="mega-section-label">SERVICES</p>
+                <ul>
+                  <li><a href="ask-an-expert.html">Ask an Expert</a></li>
+                  <li><a href="background-checks.html">Background Checks</a></li>
+                  <li><a href="compliance-watchtower.html">Compliance Watchtower</a></li>
+                  <li><a href="device-management.html">Device Management</a></li>
+                  <li><a href="entity-setup.html">Entity Setup</a></li>
+                  <li><a href="mobility-relocation.html">Mobility &amp; Relocation</a></li>
+                  <li><a href="benefits.html">Benefits</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Resources <span class="chevron">&#8964;</span></button>
+          <div class="mega-menu mega-resources" role="menu">
+            <div class="mega-body">
+              <div class="mega-left">
+                <p class="mega-section-label">RESOURCE LIBRARY</p>
+                <div class="mega-cols">
+                  <a href="blog.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5V4.5z"/></svg></span>
+                    <div><strong>Blog</strong><p>Latest global employment insights &amp; guides</p></div>
+                  </a>
+                  <a href="ask-an-expert.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+                    <div><strong>Ask an Expert</strong><p>Get answers to complex global HR questions</p></div>
+                  </a>
+                  <a href="compliance-watchtower.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                    <div><strong>Compliance Watchtower</strong><p>Stay ahead of evolving global labor laws</p></div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-right">
+                <p class="mega-section-label">FEATURED BLOG</p>
+                <a href="blog/ultimate-eor-guide.html" class="mega-case-card" role="menuitem">
+                  <div class="mega-case-img blog-post-img">
+                    <img src="images/blog/eor-guide.png" alt="Featured: EOR Guide" style="width:100%;height:100%;object-fit:cover;" />
+                  </div>
+                  <span class="mega-case-text">The Ultimate Guide to Employer of Record (EOR) hiring in 2026.</span>
+                  <span class="mega-learn-more">Read article →</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item"><a href="pricing.html" class="nav-link nav-link-active">Pricing</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-lang">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+          <span>EN</span>
+          <span class="chevron">&#8964;</span>
+        </div>
+        <a href="#demo" class="btn-nav-demo">Book a demo</a>
+      </div>
+      <button class="nav-mobile-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ── HERO SECTION ── -->
+  <section class="pricing-hero" aria-labelledby="pricing-hero-headline">
+    <div class="pricing-hero-inner container">
+      <div class="pr-trust-pill">
+        <span>ISO 27001</span> &bull; <span>SOC II TYPE 2</span> &bull; <span>GDPR READY</span> &bull; <span>33,000+ COMPANIES</span>
+      </div>
+      <h1 id="pricing-hero-headline">Simple pricing that grows with you</h1>
+      <p>Get instant estimates for your team size. Complete payroll, leave management, and employee self-service included in every plan.</p>
+    </div>
+    <!-- wave SVG decoration -->
+    <svg class="pricing-hero-wave" viewBox="0 0 1440 80" fill="none" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 40 Q360 80 720 40 Q1080 0 1440 40 L1440 80 L0 80 Z" fill="rgba(255,255,255,0.04)"/>
+      <path d="M0 55 Q360 20 720 55 Q1080 90 1440 55 L1440 80 L0 80 Z" fill="rgba(255,255,255,0.03)"/>
+    </svg>
+  </section>
+
+  <!-- CURRENCY & SLIDER SECTION -->
+  <main class="pricing-main">
+
+    <section class="pr-calc-section" id="pricing-calculator">
+      <div class="container">
+
+        <!-- Currency & Slider Control Bar -->
+        <div class="pr-control-card">
+          <div class="pr-control-header">
+            <div class="pr-estimate-title">
+              <h2>Get instant estimate for <span class="pr-emp-highlight" id="empCountDisplay">50</span> employees</h2>
+            </div>
+            <div class="currency-select-wrap">
+              <span class="currency-flag" id="currencyFlag">🇮🇳</span>
+              <select class="currency-select" aria-label="Select currency" id="currencySelect">
+                <option value="INR" selected>INR (₹)</option>
+                <option value="USD">USD ($)</option>
+                <option value="EUR">EUR (€)</option>
+                <option value="GBP">GBP (£)</option>
+              </select>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+          </div>
+
+          <!-- Interactive Slider -->
+          <div class="pr-slider-container">
+            <input type="range" id="employeeRange" min="10" max="3000" step="5" value="50" class="pr-range-slider" aria-label="Employee count slider" />
+            <div class="pr-slider-ticks">
+              <button class="pr-tick-btn" onclick="setEmployeeCount(10)">10</button>
+              <button class="pr-tick-btn active" onclick="setEmployeeCount(50)">50</button>
+              <button class="pr-tick-btn" onclick="setEmployeeCount(500)">500</button>
+              <button class="pr-tick-btn" onclick="setEmployeeCount(1000)">1,000</button>
+              <button class="pr-tick-btn" onclick="setEmployeeCount(2000)">2,000</button>
+              <button class="pr-tick-btn" onclick="setEmployeeCount(3000)">3,000+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 MAIN PRICING PLAN CARDS -->
+        <div class="pr-cards-grid">
+
+          <!-- 1. ESSENTIAL -->
+          <div class="pr-plan-card">
+            <div class="pr-plan-header">
+              <span class="pr-plan-tag">Essential</span>
+              <div class="pr-plan-price-wrap">
+                <span class="pr-plan-price" id="priceEssential">₹2,495</span>
+                <span class="pr-plan-period">/month</span>
+              </div>
+              <div class="pr-plan-breakdown">
+                <div class="pr-bd-row"><span>Base price</span><strong id="baseEssential">₹2,495</strong></div>
+                <div class="pr-bd-row"><span>Included</span><strong>50 emp</strong></div>
+                <div class="pr-bd-row"><span>Additional cost</span><strong id="addEssential">₹45/emp</strong></div>
+              </div>
+            </div>
+            <div class="pr-plan-subhead">
+              <h4>Payroll + Leave + CoreHR Basic</h4>
+            </div>
+            <ul class="pr-plan-features">
+              <li><span class="pr-chk">✓</span> Complete payroll processing</li>
+              <li><span class="pr-chk">✓</span> Leave management with unlimited types</li>
+              <li><span class="pr-chk">✓</span> Employee self-onboarding &amp; exit</li>
+              <li><span class="pr-chk">✓</span> Helpdesk</li>
+              <li class="pr-addon-item"><span class="pr-ico-plus">+</span> Expense Management (add-on)</li>
+              <li class="pr-addon-item"><span class="pr-ico-plus">+</span> SSO &amp; API (add-on)</li>
+              <li class="pr-addon-item"><span class="pr-ico-plus">+</span> EmployeeOS Recruit (add-on)</li>
+              <li class="pr-addon-item"><span class="pr-ico-plus">+</span> Alumni Portal (add-on)</li>
+              <li class="pr-included-item"><span class="pr-chk-navos">★</span> EmployeeOS NAVOS included</li>
+            </ul>
+            <div class="pr-plan-footer">
+              <a href="#demo" class="pr-btn-plan pr-btn-secondary">Request a Demo</a>
+            </div>
+          </div>
+
+          <!-- 2. GROWTH (RECOMMENDED) -->
+          <div class="pr-plan-card pr-plan-featured">
+            <div class="pr-badge-rec">RECOMMENDED</div>
+            <div class="pr-plan-header">
+              <span class="pr-plan-tag">Growth</span>
+              <div class="pr-plan-price-wrap">
+                <span class="pr-plan-price" id="priceGrowth">₹4,495</span>
+                <span class="pr-plan-period">/month</span>
+              </div>
+              <div class="pr-plan-breakdown">
+                <div class="pr-bd-row"><span>Base price</span><strong id="baseGrowth">₹4,495</strong></div>
+                <div class="pr-bd-row"><span>Included</span><strong>50 emp</strong></div>
+                <div class="pr-bd-row"><span>Additional cost</span><strong id="addGrowth">₹85/emp</strong></div>
+              </div>
+            </div>
+            <div class="pr-plan-subhead">
+              <h4>Everything in Essential + Attendance + Advanced HR</h4>
+            </div>
+            <ul class="pr-plan-features">
+              <li><span class="pr-chk">✓</span> Advanced attendance &amp; shift management</li>
+              <li><span class="pr-chk">✓</span> Overtime, permissions &amp; geo-fencing</li>
+              <li><span class="pr-chk">✓</span> Confirmation Workflow</li>
+              <li class="pr-addon-item"><span class="pr-ico-plus">+</span> Performance Management System (PMS) (add-on)</li>
+              <li class="pr-addon-item"><span class="pr-ico-plus">+</span> Expense Management (add-on)</li>
+              <li class="pr-addon-item"><span class="pr-ico-plus">+</span> GeoMark+, Visage (add-ons)</li>
+              <li class="pr-addon-item"><span class="pr-ico-plus">+</span> GPS Live Tracking (Add-on)</li>
+              <li class="pr-addon-item"><span class="pr-ico-plus">+</span> SSO, Multi-company &amp; API (add-ons)</li>
+              <li class="pr-addon-item"><span class="pr-ico-plus">+</span> EmployeeOS Recruit (add-on)</li>
+              <li class="pr-addon-item"><span class="pr-ico-plus">+</span> Alumni Portal (add-on)</li>
+              <li class="pr-addon-item"><span class="pr-ico-plus">+</span> Time Sheets (add-on)</li>
+              <li class="pr-included-item"><span class="pr-chk-navos">★</span> EmployeeOS NAVOS included</li>
+            </ul>
+            <div class="pr-plan-footer">
+              <a href="#demo" class="pr-btn-plan pr-btn-primary">Request a Demo</a>
+            </div>
+          </div>
+
+          <!-- 3. PREMIUM -->
+          <div class="pr-plan-card pr-plan-premium">
+            <div class="pr-plan-header">
+              <span class="pr-plan-tag">Premium</span>
+              <div class="pr-plan-price-wrap">
+                <span class="pr-plan-price">Custom</span>
+              </div>
+              <div class="pr-plan-breakdown">
+                <div class="pr-bd-row"><span>All modules included</span><strong>100% Covered</strong></div>
+                <div class="pr-bd-row"><span>Tailored to you</span><strong>Enterprise</strong></div>
+                <div class="pr-bd-row pr-savings-highlight"><span>~30% savings</span><strong>Vs Growth plan</strong></div>
+              </div>
+            </div>
+            <div class="pr-plan-subhead">
+              <h4>All modules included — enterprise-grade</h4>
+            </div>
+            <ul class="pr-plan-features">
+              <li><span class="pr-chk">✓</span> Performance Management System Advanced</li>
+              <li><span class="pr-chk">✓</span> Expense Management</li>
+              <li><span class="pr-chk">✓</span> GeoMark+, Visage</li>
+              <li><span class="pr-chk">✓</span> SSO, API, Multi-company support</li>
+              <li><span class="pr-chk">✓</span> Time Sheets</li>
+              <li><span class="pr-chk">✓</span> GPS Live Tracking (Add-on)</li>
+              <li><span class="pr-chk">✓</span> EmployeeOS Recruit (Add-on)</li>
+              <li class="pr-included-item"><span class="pr-chk-navos">★</span> EmployeeOS NAVOS included</li>
+              <li class="pr-included-item"><span class="pr-chk-gold">⚡</span> ~30% savings vs Growth + add-ons</li>
+            </ul>
+            <div class="pr-plan-footer">
+              <a href="#demo" class="pr-btn-plan pr-btn-dark">Contact Sales Team</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FREE TRIAL BANNER -->
+    <section class="pr-trial-banner section">
+      <div class="container">
+        <div class="pr-trial-card">
+          <div class="pr-trial-text">
+            <span class="pr-tag-pill-light">7-DAY FREE TRIAL</span>
+            <h2>Want to explore EmployeeOS?</h2>
+            <p>Experience full platform capabilities with zero commitments and no upfront cost.</p>
+          </div>
+          <a href="#demo" class="pr-trial-btn">Start Your Free Trial</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADD-ONS SECTION -->
+    <section class="pr-addons-section section" id="add-ons">
+      <div class="container">
+        <div class="pr-section-head">
+          <h2>Power up with add-ons</h2>
+          <p>Extend your plan with the modules you need. Most are included free with Premium.</p>
+        </div>
+
+        <div class="pr-addons-grid">
+
+          <!-- Addon 1 -->
+          <div class="pr-addon-card">
+            <div class="pr-addon-badge free-prem">FREE IN PREMIUM</div>
+            <h3>Performance Management System</h3>
+            <p class="pr-addon-desc">Goals, reviews, appraisals</p>
+            <div class="pr-addon-pricing">
+              <span class="pr-addon-cost" id="costAddonPms">₹35–₹45</span>
+              <span class="pr-addon-unit">/user/month</span>
+            </div>
+            <div class="pr-addon-avail">Available for : <strong>Growth</strong></div>
+          </div>
+
+          <!-- Addon 2 -->
+          <div class="pr-addon-card">
+            <div class="pr-addon-badges">
+              <span class="pr-addon-badge free-prem">FREE IN PREMIUM</span>
+              <span class="pr-addon-badge new">NEW</span>
+            </div>
+            <h3>Time sheets</h3>
+            <p class="pr-addon-desc">Project time tracking</p>
+            <div class="pr-addon-pricing">
+              <span class="pr-addon-cost" id="costAddonTimesheets">₹35</span>
+              <span class="pr-addon-unit">/user/month</span>
+            </div>
+            <div class="pr-addon-avail">Available for : <strong>Growth</strong></div>
+          </div>
+
+          <!-- Addon 3 -->
+          <div class="pr-addon-card">
+            <div class="pr-addon-badge free-prem">FREE IN PREMIUM</div>
+            <h3>Expense Management</h3>
+            <p class="pr-addon-desc">Claims, approvals, reimbursements</p>
+            <div class="pr-addon-pricing">
+              <span class="pr-addon-cost" id="costAddonExpense">₹35</span>
+              <span class="pr-addon-unit">/user/month</span>
+            </div>
+            <div class="pr-addon-avail">Available for : <strong>Growth &amp; Essential</strong></div>
+          </div>
+
+          <!-- Addon 4 -->
+          <div class="pr-addon-card">
+            <div class="pr-addon-badge new">NEW</div>
+            <h3>GPS Live tracking</h3>
+            <p class="pr-addon-desc">Real-time tracking (includes GeoMark)</p>
+            <div class="pr-addon-pricing">
+              <span class="pr-addon-cost" id="costAddonGps">₹140</span>
+              <span class="pr-addon-unit">/user/month</span>
+            </div>
+            <div class="pr-addon-avail">Available for : <strong>Growth &amp; Premium</strong></div>
+          </div>
+
+          <!-- Addon 5 -->
+          <div class="pr-addon-card">
+            <div class="pr-addon-badge tag-purple">RECRUIT</div>
+            <h3>Recruit</h3>
+            <p class="pr-addon-desc">All-in-one Recruitment solution</p>
+            <div class="pr-addon-pricing">
+              <span class="pr-addon-cost" id="costAddonRecruit">₹2,500</span>
+              <span class="pr-addon-unit">/recruiter/month</span>
+            </div>
+            <div class="pr-addon-avail">Available for : <strong>All plans</strong></div>
+          </div>
+
+          <!-- Addon 6 -->
+          <div class="pr-addon-card">
+            <div class="pr-addon-badge tag-teal">ALUMNI</div>
+            <h3>Alumni Portal</h3>
+            <p class="pr-addon-desc">Ex-employee engagement portal</p>
+            <div class="pr-addon-pricing">
+              <span class="pr-addon-cost" id="costAddonAlumni">₹20</span>
+              <span class="pr-addon-unit">/user/month</span>
+            </div>
+            <div class="pr-addon-avail">Available for : <strong>All plans</strong></div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FLEXIBLE START BANNER -->
+    <section class="pr-flex-banner section">
+      <div class="container">
+        <div class="pr-flex-card">
+          <div>
+            <span class="pr-flex-tag">FLEXIBLE START</span>
+            <h2>Not ready for the full suite?</h2>
+            <p>Begin with just one piece — the rest can follow when you’re ready.</p>
+          </div>
+          <a href="#demo" class="pr-flex-btn">Talk to Sales Team</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE & ROI CALCULATOR TOOLS SECTION -->
+    <section class="pr-value-section section" id="calculators">
+      <div class="container">
+        <div class="pr-section-head">
+          <h2>From cost to value — see the full picture</h2>
+          <p class="pr-sub-bullets">• Takes less than 30 seconds &bull; Used by 33,000+ companies</p>
+        </div>
+
+        <div class="pr-value-grid">
+          <div class="pr-value-card">
+            <div class="pr-val-num">1</div>
+            <h3>Calculate your pricing</h3>
+            <p>Get an exact estimate for your team size and needs</p>
+            <a href="#pricing-calculator" class="pr-val-btn">Pricing Calculator</a>
+          </div>
+
+          <div class="pr-value-card">
+            <div class="pr-val-num">2</div>
+            <h3>See your ROI</h3>
+            <p>Estimate your time and cost savings instantly</p>
+            <button onclick="toggleRoiModal()" class="pr-val-btn pr-val-btn-roi" id="roiModalTrigger">ROI Calculator</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAILED FEATURE COMPARISON TABLE -->
+    <section class="pr-table-section section" id="comparison">
+      <div class="container">
+        <div class="pr-section-head">
+          <h2>Detailed feature comparison</h2>
+          <p>Features &amp; Modules (29)</p>
+        </div>
+
+        <!-- Search Bar for Features -->
+        <div class="pr-table-search-wrap">
+          <input type="text" id="featureSearchInput" placeholder="Search features..." class="pr-search-input" aria-label="Search features" />
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pr-search-ico"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        </div>
+
+        <!-- Table Container -->
+        <div class="pr-table-container">
+          <table class="pr-comp-table" id="featureTable">
+            <thead>
+              <tr>
+                <th class="col-feature">Features &amp; Modules</th>
+                <th class="col-plan">Essential</th>
+                <th class="col-plan">Growth</th>
+                <th class="col-plan col-prem">Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Number of Employees</td>
+                <td>Unlimited</td>
+                <td>Unlimited</td>
+                <td class="col-prem">Unlimited</td>
+              </tr>
+              <tr>
+                <td>Cost Per Additional Employee</td>
+                <td id="tblAddEssential">₹45 / month</td>
+                <td id="tblAddGrowth">₹85 / month</td>
+                <td class="col-prem">Talk to Sales</td>
+              </tr>
+
+              <!-- Category 1 -->
+              <tr class="tr-cat-header"><td colspan="4">Core HR (9)</td></tr>
+              <tr><td>Employee Database &amp; Organization Hierarchy</td><td><span class="pr-chk">✓</span></td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+              <tr><td>Document Management System</td><td><span class="pr-chk">✓</span></td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+              <tr><td>Unite Market Place</td><td><span class="pr-chk">✓</span></td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+
+              <!-- Category 2 -->
+              <tr class="tr-cat-header"><td colspan="4">Payroll (13)</td></tr>
+              <tr><td>Automated Salary Processing</td><td><span class="pr-chk">✓</span></td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+              <tr><td>Statutory Compliances (PF, ESI, PT, TDS)</td><td><span class="pr-chk">✓</span></td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+              <tr><td>Direct Salary Payouts</td><td><span class="pr-chk">✓</span></td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+
+              <!-- Category 3 -->
+              <tr class="tr-cat-header"><td colspan="4">Leave Management (2)</td></tr>
+              <tr><td>Custom Leave Types &amp; Policies</td><td><span class="pr-chk">✓</span></td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+              <tr><td>Holiday Calendars &amp; Accrual Rules</td><td><span class="pr-chk">✓</span></td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+
+              <!-- Category 4 -->
+              <tr class="tr-cat-header"><td colspan="4">Employee Workflows for Process Automation (4)</td></tr>
+              <tr><td>Confirmation &amp; Transfer Workflows</td><td>Limited</td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+              <tr><td>Multi-level Approval Workflows</td><td>Limited</td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+
+              <!-- Category 5 -->
+              <tr class="tr-cat-header"><td colspan="4">Attendance Management (6)</td></tr>
+              <tr><td>Overtime, Permissions &amp; Geo-fencing</td><td><span class="pr-badge-addon">Add-on</span></td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+              <tr><td>Shift Roster &amp; Attendance Regularization</td><td><span class="pr-badge-addon">Add-on</span></td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+
+              <!-- Category 6 -->
+              <tr class="tr-cat-header"><td colspan="4">Time Sheets (5) <span class="badge-cat-new">NEW</span></td></tr>
+              <tr><td>Project Time Tracking &amp; Billing</td><td><span class="pr-badge-addon">Add-on</span></td><td><span class="pr-badge-addon">Add-on</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+
+              <!-- Category 7 -->
+              <tr class="tr-cat-header"><td colspan="4">Employee Self Onboarding (5)</td></tr>
+              <tr><td>Digital Document Upload &amp; Verification</td><td><span class="pr-chk">✓</span></td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+
+              <!-- Category 8 -->
+              <tr class="tr-cat-header"><td colspan="4">Comprehensive Employee Exit Management (4)</td></tr>
+              <tr><td>Resignation Workflow &amp; F&amp;F Settlement</td><td><span class="pr-chk">✓</span></td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+
+              <!-- Category 9 -->
+              <tr class="tr-cat-header"><td colspan="4">Employee Portal (Web and Mobile app) (5)</td></tr>
+              <tr><td>Mobile Payslip Access &amp; Tax Declaration</td><td><span class="pr-chk">✓</span></td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+
+              <!-- Category 10 -->
+              <tr class="tr-cat-header"><td colspan="4">Automated Checklists for Task Management (3)</td></tr>
+              <tr><td>Onboarding &amp; Offboarding Checklists</td><td><span class="pr-chk">✓</span></td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+
+              <!-- Category 11 -->
+              <tr class="tr-cat-header"><td colspan="4">Advanced Analytics &amp; Reporting (4)</td></tr>
+              <tr><td>Custom Payroll &amp; HR Analytics</td><td>Basic</td><td>Advanced</td><td class="col-prem">Enterprise</td></tr>
+
+              <!-- Category 12 -->
+              <tr class="tr-cat-header"><td colspan="4">AI-Powered Chatbot &amp; Support</td></tr>
+              <tr><td>24/7 AI HR Assistant</td><td><span class="pr-chk">✓</span></td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+
+              <!-- Category 13 -->
+              <tr class="tr-cat-header"><td colspan="4">Access &amp; User Management (6)</td></tr>
+              <tr><td>SSO &amp; Role-based Permissions</td><td><span class="pr-badge-addon">Add-on</span></td><td><span class="pr-badge-addon">Add-on</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+
+              <!-- Category 14 -->
+              <tr class="tr-cat-header"><td colspan="4">GeoMark+, Visage &amp; GPS Live Tracking</td></tr>
+              <tr><td>GeoMark+ (Geofenced attendance)</td><td><span class="pr-badge-addon">Add-on</span></td><td><span class="pr-badge-addon">Add-on</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+              <tr><td>Visage (Facial recognition attendance)</td><td><span class="pr-badge-addon">Add-on</span></td><td><span class="pr-badge-addon">Add-on</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+              <tr><td>GPS Live Tracking <span class="badge-cat-new">NEW</span></td><td><span class="pr-badge-addon">Add-on</span></td><td><span class="pr-badge-addon">Add-on</span></td><td class="col-prem"><span class="pr-badge-addon">Add-on</span></td></tr>
+
+              <!-- Category 15 -->
+              <tr class="tr-cat-header"><td colspan="4">Recruit (5)</td></tr>
+              <tr><td>All-in-one Recruitment solution</td><td><span class="pr-badge-addon">Add-on</span></td><td><span class="pr-badge-addon">Add-on</span></td><td class="col-prem"><span class="pr-badge-addon">Add-on</span></td></tr>
+
+              <!-- Category 16 -->
+              <tr class="tr-cat-header"><td colspan="4">Manpower planning and Budgeting (4) <span class="badge-cat-new">NEW</span></td></tr>
+              <tr><td>Headcount Planning &amp; Cost Forecasting</td><td><span class="pr-badge-addon">Add-on</span></td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+
+              <!-- Category 17 -->
+              <tr class="tr-cat-header"><td colspan="4">Expense Management (7)</td></tr>
+              <tr><td>Claims &amp; Reimbursement Workflows</td><td><span class="pr-badge-addon">Add-on</span></td><td><span class="pr-badge-addon">Add-on</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+
+              <!-- Category 18 -->
+              <tr class="tr-cat-header"><td colspan="4">Performance Management Software (PMS) (2)</td></tr>
+              <tr><td>Goals, 360 Reviews &amp; Appraisals</td><td><span class="pr-badge-addon">Add-on</span></td><td><span class="pr-badge-addon">Add-on</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+
+              <!-- Category 19 -->
+              <tr class="tr-cat-header"><td colspan="4">Alumni Portal</td></tr>
+              <tr><td>Ex-employee Engagement &amp; Tax Slips</td><td><span class="pr-badge-addon">Add-on</span></td><td><span class="pr-badge-addon">Add-on</span></td><td class="col-prem"><span class="pr-badge-addon">Add-on</span></td></tr>
+
+              <!-- Category 20 -->
+              <tr class="tr-cat-header"><td colspan="4">Security &amp; Compliance (5)</td></tr>
+              <tr><td>SOC II Type 2 &amp; ISO 27001 Certified</td><td><span class="pr-chk">✓</span></td><td><span class="pr-chk">✓</span></td><td class="col-prem"><span class="pr-chk">✓</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER: EmployeeOS PAYROLL PRO -->
+    <section class="pr-pro-banner section">
+      <div class="container">
+        <div class="pr-pro-card">
+          <div class="pr-pro-content">
+            <span class="pr-pro-tag">EMPLOYEEOS PAYROLL PRO</span>
+            <h2>Put your payroll service on the fast track to success</h2>
+            <p>Get, set, grow. A rock-solid plan designed for rapid business growth and error-free global payroll execution.</p>
+          </div>
+          <a href="#demo" class="pr-pro-btn">Book a demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS & REVIEWS -->
+    <section class="pr-reviews-section section" id="reviews">
+      <div class="container">
+        <div class="pr-section-head">
+          <h2>What our clients say</h2>
+          <p>Trusted by HR leaders worldwide</p>
+        </div>
+
+        <div class="pr-reviews-grid">
+          <div class="pr-review-card">
+            <div class="pr-rev-rating">★★★★★ <span class="pr-rev-source">G2 Verified</span></div>
+            <blockquote>"The simplest way to process payroll and pricing is very affordable for organizations. Customer support for queries is mind-blowing."</blockquote>
+            <div class="pr-rev-author">
+              <strong>Ishwarya R</strong>
+              <span>HR Operations</span>
+            </div>
+          </div>
+
+          <div class="pr-review-card">
+            <div class="pr-rev-rating">★★★★★ <span class="pr-rev-source">G2 Verified</span></div>
+            <blockquote>"User-friendly application, supportive team, and competitive price-value for money. Also, they do not charge for extra customized requirements."</blockquote>
+            <div class="pr-rev-author">
+              <strong>Satish K</strong>
+              <span>Joint General Manager - HR</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metrics bar -->
+        <div class="pr-metrics-bar">
+          <div class="pr-metric-item">
+            <span class="pr-metric-val">33,000+</span>
+            <span class="pr-metric-lbl">Customers</span>
+          </div>
+          <div class="pr-metric-item">
+            <span class="pr-metric-val">2,000,000+</span>
+            <span class="pr-metric-lbl">Employees Processed</span>
+          </div>
+          <div class="pr-metric-item">
+            <span class="pr-metric-val">100+</span>
+            <span class="pr-metric-lbl">Countries Supported</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRICING FAQS ACCORDION -->
+    <section class="faq-section section" id="faq">
+      <div class="container faq-inner">
+        <div class="faq-left">
+          <h2>Pricing FAQs</h2>
+          <p style="font-size: .875rem; color: #6b7280; margin-top: .5rem;">Have more questions? Our support team is here 24/7.</p>
+        </div>
+        <div class="faq-right">
+          <div class="faq-list">
+
+            <div class="faq-item open">
+              <button class="faq-q" aria-expanded="true">
+                What happens when my free trial ends?
+                <span class="faq-chevron">&#8963;</span>
+              </button>
+              <div class="faq-a">
+                <p>When your 7-day free trial ends, you can choose to subscribe to Essential, Growth, or Premium. Your setup and data will remain intact so you can start processing immediately with zero downtime.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                Can I upgrade or downgrade my plan?
+                <span class="faq-chevron">&#8964;</span>
+              </button>
+              <div class="faq-a">
+                <p>Yes. You can upgrade, downgrade, or adjust your employee count at any time from your account settings. Changes take effect on your next billing cycle.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                Do you require any long-term commitments?
+                <span class="faq-chevron">&#8964;</span>
+              </button>
+              <div class="faq-a">
+                <p>No long-term contracts are required for standard plans. You pay month-to-month and can cancel at any time without penalty.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                Can I avail an annual subscription plan?
+                <span class="faq-chevron">&#8964;</span>
+              </button>
+              <div class="faq-a">
+                <p>Yes, we offer annual subscription billing which comes with an additional discount up to 15% off total costs. Contact our sales team to lock in annual rates.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                Is there any cancellation fee or a lock-in period?
+                <span class="faq-chevron">&#8964;</span>
+              </button>
+              <div class="faq-a">
+                <p>Zero cancellation fees and zero lock-in period for monthly plans. You retain full control over your subscription.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                What types of payment do you accept?
+                <span class="faq-chevron">&#8964;</span>
+              </button>
+              <div class="faq-a">
+                <p>We accept all major credit cards (Visa, MasterCard, American Express), bank wire transfers, ACH direct debits, and local net banking.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                Who owns my data?
+                <span class="faq-chevron">&#8964;</span>
+              </button>
+              <div class="faq-a">
+                <p>You own 100% of your data. You can export employee records, tax slips, and payroll reports anytime in standard Excel or CSV formats.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q" aria-expanded="false">
+                How safe is my data?
+                <span class="faq-chevron">&#8964;</span>
+              </button>
+              <div class="faq-a">
+                <p>EmployeeOS is ISO 27001 certified, SOC II Type 2 compliant, and 100% GDPR compliant. All data is encrypted with bank-grade 256-bit AES encryption.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ROI CALCULATOR MODAL -->
+  <div class="pr-modal-backdrop" id="roiModalBackdrop" aria-hidden="true" onclick="if(event.target===this) toggleRoiModal()">
+    <div class="pr-modal-content">
+      <button class="pr-modal-close" onclick="toggleRoiModal()" aria-label="Close modal">&times;</button>
+      <span class="pr-plan-tag">INTERACTIVE ROI CALCULATOR</span>
+      <h3>Estimate your Time &amp; Cost Savings</h3>
+      <p>See how much hours and money your HR team gets back every month with EmployeeOS.</p>
+
+      <div class="pr-roi-form">
+        <label for="roiEmpCount">Your Employee Count:</label>
+        <input type="number" id="roiEmpCount" value="50" min="5" max="5000" oninput="calculateRoi()" class="pr-num-input" />
+
+        <div class="pr-roi-results">
+          <div class="roi-res-box">
+            <span class="roi-val" id="roiHoursSaved">120 hrs</span>
+            <span class="roi-lbl">HR Time Saved / Month</span>
+          </div>
+          <div class="roi-res-box">
+            <span class="roi-val" id="roiCostSaved">₹42,000</span>
+            <span class="roi-lbl">Estimated Monthly Savings</span>
+          </div>
+        </div>
+      </div>
+      <a href="#demo" onclick="toggleRoiModal()" class="pr-btn-plan pr-btn-primary" style="margin-top: 1.5rem;">Get Detailed ROI Report</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M6 4h7a4 4 0 0 1 4 4 4 4 0 0 1-2.5 3.7L18 20h-3.2l-2.3-7.8H9V20H6V4zm3 2.4v3.8h4a1.6 1.6 0 0 0 1.6-1.9A1.6 1.6 0 0 0 13 6.4H9z"
+                fill="white" />
+            </svg></span>
+          <span class="logo-text">EmployeeOS</span>
+        </a>
+        <p class="footer-tagline">Global employment infrastructure for modern businesses.</p>
+        <p class="footer-copy">&#xa9; 2026 EmployeeOS Technology, Inc. All rights reserved.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="global-payroll.html">Global Payroll</a></li>
+          <li><a href="employer-of-record.html">Employer of Record</a></li>
+          <li><a href="contractor-management.html">Contractor Management</a></li>
+          <li><a href="#">HR Management</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="peo.html">PEO</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Country Guides</a></li>
+          <li><a href="#">HR Glossary</a></li>
+          <li><a href="#">Cost Calculator</a></li>
+          <li><a href="#">Webinars</a></li>
+          <li><a href="#">Customer Stories</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Security</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="pricing.js"></script>
+</body>
+</html>

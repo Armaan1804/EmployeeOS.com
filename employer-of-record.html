@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employer of Record (EOR) — Hire Anyone, Anywhere | EmployeeOS</title>
+  <meta name="description" content="Expand globally with zero entity cost. EmployeeOS handles global compliance, local payroll, benefits, and taxes so you can scale your team worldwide." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="product-page.css" />
+  <style>
+    /* Page specific theme overrides for EOR - Pink/Red theme */
+    .eor-theme-hero {
+      background:
+        radial-gradient(ellipse 80% 80% at 70% 40%, rgba(190, 24, 93, 0.45) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 60% at 30% 70%, rgba(131, 24, 67, 0.35) 0%, transparent 60%),
+        linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px),
+        #1c0b12;
+      background-size: auto, auto, 28px 28px, 28px 28px, auto;
+    }
+    .eor-theme-badge {
+      background: #fdf2f8 !important;
+      color: #be185d !important;
+    }
+    .eor-theme-btn {
+      background: #be185d !important;
+      color: white !important;
+      box-shadow: 0 4px 14px rgba(190, 24, 93, 0.35) !important;
+    }
+    .eor-theme-btn:hover {
+      background: #9d174d !important;
+    }
+    .eor-theme-text-accent {
+      background: #ffffff !important;
+      color: #be185d !important;
+      transition: background 0.25s ease, color 0.25s ease, transform 0.2s, box-shadow 0.2s;
+    }
+    .eor-theme-text-accent:hover {
+      background: #be185d !important;
+      color: #ffffff !important;
+      box-shadow: 0 8px 28px rgba(190, 24, 93, 0.45) !important;
+    }
+    .eor-theme-btn-nav-demo {
+      background: #be185d !important;
+    }
+    .eor-theme-btn-nav-demo:hover {
+      background: #9d174d !important;
+    }
+
+    /* EOR Partner section: pink typography & white button text */
+    #partner.gp-partner {
+      background: #fff8fb !important;
+    }
+    #partner .gp-partner-text h2 {
+      color: #be185d !important;
+    }
+    #partner .gp-partner-text p {
+      color: #9d174d !important;
+    }
+    #partner .gp-partner-text .gp-ai-list li {
+      color: #9d174d !important;
+    }
+    #partner .gp-cta-dark {
+      background: #be185d !important;
+      color: #ffffff !important;
+      box-shadow: 0 4px 14px rgba(190, 24, 93, 0.3) !important;
+      transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
+    }
+    #partner .gp-cta-dark:hover {
+      background: #9d174d !important;
+      color: #ffffff !important;
+      transform: translateY(-2px) !important;
+      box-shadow: 0 8px 24px rgba(190, 24, 93, 0.45) !important;
+    }
+    #partner .gp-person-card {
+      background: #ffffff !important;
+      border: 1px solid #fce7f3 !important;
+      box-shadow: 0 4px 16px rgba(190, 24, 93, 0.08) !important;
+    }
+    #partner .gp-person-card strong {
+      color: #831843 !important;
+    }
+    #partner .gp-person-card span {
+      color: #be185d !important;
+    }
+    #partner .gp-support-badge {
+      background: #ffffff !important;
+      border: 1px solid #fce7f3 !important;
+      color: #be185d !important;
+      box-shadow: 0 2px 10px rgba(190, 24, 93, 0.06) !important;
+    }
+
+    /* AI Workflows & Hub styling */
+    .gp-ai .gp-ai-list li,
+    .gp-hub .gp-ai-list li {
+      color: #111827 !important;
+    }
+    .gp-ai .gp-check,
+    .gp-hub .gp-check {
+      background: #16a34a !important;
+      color: #ffffff !important;
+    }
+    #ai-workflows .gp-cta-outline,
+    #hub .gp-cta-outline {
+      transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    #ai-workflows .gp-cta-outline:hover,
+    #hub .gp-cta-outline:hover {
+      background: #be185d !important;
+      color: #ffffff !important;
+      border-color: #be185d !important;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(190, 24, 93, 0.35);
+    }
+
+    /* Testimonials dark cards */
+    #testimonials .gp-quote {
+      background: #111827 !important;
+      border: 1px solid #1f2937 !important;
+      border-top: 3px solid #be185d !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25) !important;
+    }
+    #testimonials .gp-quote:hover {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+      border-color: #374151 !important;
+      border-top-color: #be185d !important;
+    }
+    #testimonials .gp-quote > p {
+      color: rgba(255, 255, 255, 0.9) !important;
+    }
+    #testimonials .gp-quote footer strong {
+      color: #ffffff !important;
+    }
+    #testimonials .gp-quote footer span {
+      color: rgba(255, 255, 255, 0.6) !important;
+    }
+
+    /* Sticky Bar EOR Rose Theme */
+    .eor-theme-sticky-bar {
+      background: linear-gradient(135deg, #be185d 0%, #831843 100%) !important;
+      box-shadow: 0 20px 50px rgba(190, 24, 93, 0.45), 0 8px 24px rgba(0, 0, 0, 0.3) !important;
+    }
+    .eor-theme-sticky-bar .gp-sticky-btn-primary {
+      color: #be185d !important;
+    }
+    .eor-theme-sticky-bar .gp-sticky-btn-primary:hover {
+      background: #fdf2f8 !important;
+      color: #9d174d !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-wrapper" id="navbar">
+    <nav class="nav-inner container">
+      <a href="index.html" class="nav-logo" aria-label="EmployeeOS Home">
+        <span class="logo-mark">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M6 4h7a4 4 0 0 1 4 4 4 4 0 0 1-2.5 3.7L18 20h-3.2l-2.3-7.8H9V20H6V4zm3 2.4v3.8h4a1.6 1.6 0 0 0 1.6-1.9A1.6 1.6 0 0 0 13 6.4H9z"
+              fill="white" />
+          </svg>
+        </span>
+        <span class="logo-text">EmployeeOS</span>
+      </a>
+      <ul class="nav-links" role="list">
+
+        <!-- PRODUCTS -->
+        <li class="nav-item has-dropdown">
+          <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Products <span
+              class="chevron">&#8964;</span></button>
+          <div class="mega-menu mega-products" role="menu">
+            <div class="mega-body">
+              <div class="mega-left">
+                <p class="mega-section-label">GLOBAL EMPLOYMENT</p>
+                <div class="mega-cols">
+                  <a href="global-payroll.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></span>
+                    <div><strong>Global Payroll</strong><p>Run compliant payroll easily</p></div>
+                  </a>
+                  <a href="employer-of-record.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+                    <div><strong>Employer of Record</strong><p>Expand globally with zero entity cost</p></div>
+                  </a>
+                  <a href="contractor-of-record.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
+                    <div><strong>Contractor of Record</strong><p>Compliantly engage contractors worldwide</p></div>
+                  </a>
+                  <a href="contractor-management.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                    <div><strong>Contractor Management</strong><p>Onboard and manage contractors globally</p></div>
+                  </a>
+                  <a href="peo.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+                    <div><strong>PEO</strong><p>Outsource complex employment tasks</p></div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-right mega-right-services">
+                <p class="mega-section-label">SERVICES</p>
+                <ul>
+                  <li><a href="ask-an-expert.html">Ask an Expert</a></li>
+                  <li><a href="background-checks.html">Background Checks</a></li>
+                  <li><a href="compliance-watchtower.html">Compliance Watchtower</a></li>
+                  <li><a href="device-management.html">Device Management</a></li>
+                  <li><a href="entity-setup.html">Entity Setup</a></li>
+                  <li><a href="mobility-relocation.html">Mobility &amp; Relocation</a></li>
+                  <li><a href="benefits.html">Benefits</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Resources <span
+              class="chevron">&#8964;</span></button>
+          <div class="mega-menu mega-resources" role="menu">
+            <div class="mega-body">
+              <div class="mega-left">
+                <p class="mega-section-label">RESOURCE LIBRARY</p>
+                <div class="mega-cols">
+                  <a href="blog.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5V4.5z"/></svg></span>
+                    <div><strong>Blog</strong><p>Latest global employment insights &amp; guides</p></div>
+                  </a>
+                  <a href="ask-an-expert.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+                    <div><strong>Ask an Expert</strong><p>Get answers to complex global HR questions</p></div>
+                  </a>
+                  <a href="compliance-watchtower.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                    <div><strong>Compliance Watchtower</strong><p>Stay ahead of evolving global labor laws</p></div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-right">
+                <p class="mega-section-label">FEATURED BLOG</p>
+                <a href="blog/ultimate-eor-guide.html" class="mega-case-card" role="menuitem">
+                  <div class="mega-case-img blog-post-img">
+                    <img src="images/blog/eor-guide.png" alt="Featured: EOR Guide" style="width:100%;height:100%;object-fit:cover;" />
+                  </div>
+                  <span class="mega-case-text">The Ultimate Guide to Employer of Record (EOR) hiring in 2026.</span>
+                  <span class="mega-learn-more">Read article →</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-lang">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <path
+              d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+          <span>EN</span>
+          <span class="chevron">&#8964;</span>
+        </div>
+        <a href="#demo" class="btn-nav-demo eor-theme-btn-nav-demo">Book a demo</a>
+      </div>
+      <button class="nav-mobile-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="gp-hero eor-theme-hero" id="hero">
+    <div class="container gp-hero-inner">
+      <div class="gp-hero-text">
+        <p class="gp-eyebrow">Global Expansion, Simplified</p>
+        <h1 class="gp-hero-h1">Hire anyone, anywhere.<br/>No local entities needed.</h1>
+        <p class="gp-hero-sub">EmployeeOS EOR handles your global compliance, local payroll, benefits, and taxes so you can scale worldwide with zero entity hassle.</p>
+        <a href="#demo" class="gp-hero-cta eor-theme-text-accent">Book a demo</a>
+      </div>
+      <div class="gp-hero-visual">
+        <img src="images/EORhero.png" alt="EmployeeOS Employer of Record" class="gp-hero-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGO BAR -->
+  <section class="gp-logo-bar">
+    <div class="container">
+      <p class="gp-logo-label" style="color: #be185d;">GLOBAL COMPANIES EXPAND WITH EMPLOYEEOS EOR</p>
+      <div class="logo-track-wrap">
+        <div class="logo-track">
+          <span class="plogo">GitLab</span><span class="plogo">MIZUHO</span>
+          <span class="plogo">Lovable</span><span class="plogo">box</span>
+          <span class="plogo">miro</span><span class="plogo">KFC</span>
+          <span class="plogo">Heineken</span><span class="plogo">BYD</span>
+          <span class="plogo">Vercel</span><span class="plogo">ANTHROPIC</span>
+          <span class="plogo">DATADOG</span><span class="plogo">Mercury</span>
+          <span class="plogo">GitLab</span><span class="plogo">MIZUHO</span>
+          <span class="plogo">Lovable</span><span class="plogo">box</span>
+          <span class="plogo">miro</span><span class="plogo">KFC</span>
+          <span class="plogo">Heineken</span><span class="plogo">BYD</span>
+          <span class="plogo">Vercel</span><span class="plogo">ANTHROPIC</span>
+          <span class="plogo">DATADOG</span><span class="plogo">Mercury</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THREE FEATURES PILLARS -->
+  <section class="gp-features-overview section" id="features">
+    <div class="container">
+      <h2 class="gp-section-h2">Global Employer of Record service from day one</h2>
+      <div class="gp-pillars">
+        <div class="gp-pillar">
+          <span class="gp-pillar-ico" style="background: #be185d;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </span>
+          <h3>Owned legal entity network</h3>
+          <p>We own legal entities in 100+ countries, which means you have complete infrastructure custody and zero third-party agent risk.</p>
+        </div>
+        <div class="gp-pillar">
+          <span class="gp-pillar-ico" style="background: #be185d;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" /></svg>
+          </span>
+          <h3>Full localized benefits setup</h3>
+          <p>Give your global hires first-class health insurance, private pensions, and custom localized perks, fully managed and compliant.</p>
+        </div>
+        <div class="gp-pillar">
+          <span class="gp-pillar-ico" style="background: #be185d;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </span>
+          <h3>100% IP &amp; data protection</h3>
+          <p>All intellectual property created by EOR employees is fully transferred to your company under the secure EmployeeOS IP Guard protection layer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY EOR STATS -->
+  <section class="gp-why section" id="why">
+    <div class="container">
+      <h2 class="gp-section-h2">Why EmployeeOS EOR?</h2>
+      <div class="gp-stats-grid">
+        <div class="gp-stat-card" style="border-top: 4px solid #be185d;">
+          <span class="gp-stat-value" style="color: #be185d;">2.3 Days</span>
+          <h3 class="gp-stat-label">Average onboarding speed</h3>
+          <p>Onboard international employees in days instead of the typical 30-day industry benchmark.</p>
+        </div>
+        <div class="gp-stat-card" style="border-top: 4px solid #be185d;">
+          <span class="gp-stat-value" style="color: #be185d;">100+</span>
+          <h3 class="gp-stat-label">Countries with owned entities</h3>
+          <p>Hire natively. We don't use third-party partner entities, ensuring complete regulatory control and faster support.</p>
+        </div>
+        <div class="gp-stat-card" style="border-top: 4px solid #be185d;">
+          <span class="gp-stat-value" style="color: #be185d;">$0</span>
+          <h3 class="gp-stat-label">Local entity setup fees</h3>
+          <p>Establish legal footprints globally in minutes. Avoid high setup costs, compliance risks, and annual overhead.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT DEMO -->
+  <section class="gp-demo-section section" id="demo-tour">
+    <div class="gp-demo-sticky-wrapper">
+      <div class="container gp-demo-inner">
+        <div class="gp-demo-gallery">
+          <div class="gp-demo-tabs" role="tablist">
+            <button class="gp-demo-tab active" onclick="switchMockpay(1, this)" id="tab-btn-1">AI-powered</button>
+            <button class="gp-demo-tab" onclick="switchMockpay(2, this)" id="tab-btn-2">Owned Entities</button>
+            <button class="gp-demo-tab" onclick="switchMockpay(3, this)" id="tab-btn-3">Expertise</button>
+          </div>
+          <div class="gp-demo-img-frame">
+            <div class="gp-mockpay-track" id="mockpayTrack" style="transform: translateX(0%);">
+              <img src="images/mockpay1.png" alt="AI-powered" class="gp-mockpay-slide">
+              <img src="images/mockpay2.png" alt="Owned Entities" class="gp-mockpay-slide">
+              <img src="images/mockpay3.png" alt="Expertise" class="gp-mockpay-slide">
+            </div>
+          </div>
+        </div>
+        <div class="gp-demo-text-card" id="mockpayTextCard" style="opacity: 1; transform: translateY(0px);">
+          <span class="gp-tag-pill" id="mockpayTag" style="background: rgba(190, 24, 93, 0.1); color: #be185d;">AI-powered</span>
+          <h2 id="mockpayTitle">Compliant EOR operations powered by AI workflows</h2>
+          <p id="mockpayDesc">We leverage intelligent models to localise contracts, process local payroll, evaluate state compliance, and administer benefits instantly.</p>
+          <ul class="gp-ai-list" id="mockpayList">
+            <li><span class="gp-check" style="color: #be185d;">✓</span> Automatic contract adaptation matching local labor laws</li>
+            <li><span class="gp-check" style="color: #be185d;">✓</span> Smart tax withholding &amp; contribution computations</li>
+            <li><span class="gp-check" style="color: #be185d;">✓</span> Local benefit mapping based on target employee jurisdiction</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- TESTIMONIALS -->
+  <section class="gp-testimonial section" id="testimonials">
+    <div class="container">
+      <h2 class="gp-section-h2">Trusted by global companies</h2>
+      <div class="gp-testimonial-grid">
+        <blockquote class="gp-quote featured" style="border-top-color: #be185d;">
+          <div class="gp-quote-stars" style="color: #be185d;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <p>&#x201C;EmployeeOS made international expansion completely trivial. We saved months of planning and tens of thousands in legal consultancies by letting their EOR handle entity setup.&#x201D;</p>
+          <footer>
+            <img src="https://i.pravatar.cc/44?img=38" alt="Sarah Chen" />
+            <div>
+              <strong>Sarah Chen</strong>
+              <span>CEO, TechStartup Inc.</span>
+            </div>
+          </footer>
+        </blockquote>
+        <blockquote class="gp-quote featured" style="border-top-color: #be185d;">
+          <div class="gp-quote-stars" style="color: #be185d;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <p>&#x201C;We onboarded 12 engineers in 8 different countries within a single week. The onboarding average of 2.3 days is a real, measurable performance indicator.&#x201D;</p>
+          <footer>
+            <img src="https://i.pravatar.cc/44?img=11" alt="Luke McKinlay" />
+            <div>
+              <strong>Luke McKinlay</strong>
+              <span>VP of Finance, Acme Corp</span>
+            </div>
+          </footer>
+        </blockquote>
+        <blockquote class="gp-quote featured" style="border-top-color: #be185d;">
+          <div class="gp-quote-stars" style="color: #be185d;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <p>&#x201C;IP protection is critical for our software product. EmployeeOS IP Guard gave our investors absolute peace of mind during our Series A round.&#x201D;</p>
+          <footer>
+            <img src="https://i.pravatar.cc/44?img=21" alt="Marisol Jimenez" />
+            <div>
+              <strong>Marisol Jim&#xe9;nez</strong>
+              <span>Head of People, HomeProject</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section class="gp-awards section" id="awards">
+    <div class="container">
+      <h2 class="gp-section-h2">Voted the leader in Employer of Record (EOR) services</h2>
+      <div class="gp-awards-grid">
+        <div class="gp-award-card">
+          <div class="gp-award-badge g2">G2</div>
+          <strong>Leader EOR</strong>
+          <span>Winter 2026</span>
+          <div class="gp-stars" style="color: #be185d;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <small>4.8/5 &#xB7; 1,500+ reviews</small>
+        </div>
+        <div class="gp-award-card">
+          <div class="gp-award-badge g2">G2</div>
+          <strong>EOR Relationship</strong>
+          <span>Enterprise &#xB7; 2026</span>
+          <div class="gp-stars" style="color: #be185d;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <small>4.7/5 &#xB7; 950+ reviews</small>
+        </div>
+        <div class="gp-award-card">
+          <div class="gp-award-badge tp">Trustpilot</div>
+          <strong>Excellent EOR</strong>
+          <span>4.9 / 5.0</span>
+          <div class="gp-stars" style="color: #be185d;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <small>2,900+ verified reviews</small>
+        </div>
+        <div class="gp-award-card">
+          <div class="gp-award-badge g2">G2</div>
+          <strong>EOR High Performer</strong>
+          <span>SMB &#xB7; 2026</span>
+          <div class="gp-stars" style="color: #be185d;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <small>4.8/5 &#xB7; 720+ reviews</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- FAQ -->
+  <section class="gp-faq section" id="faq">
+    <div class="container gp-faq-inner">
+      <h2 class="gp-section-h2">Frequently Asked Questions</h2>
+      <div class="gp-faq-list">
+        <div class="gp-faq-item open">
+          <button class="gp-faq-q" aria-expanded="true">What is an Employer of Record (EOR)?</button>
+          <div class="gp-faq-a"><p>An EOR acts as the legal employer for your staff in countries where you do not have a registered legal entity. The EOR manages employment contracts, local tax withholding, pensions, health benefits, and payroll, while you manage the employee's day-to-day work tasks.</p></div>
+        </div>
+        <div class="gp-faq-item">
+          <button class="gp-faq-q" aria-expanded="false">How long does EOR onboarding take?</button>
+          <div class="gp-faq-a"><p>While standard industry EOR onboarding can take 30 days, EmployeeOS's average is just <strong>2.3 days</strong>. Our direct owned entities and local experts allow us to draft, review, and execute compliant contracts in record time.</p></div>
+        </div>
+        <div class="gp-faq-item">
+          <button class="gp-faq-q" aria-expanded="false">What is the difference between an EOR and a PEO?</button>
+          <div class="gp-faq-a"><p>An **EOR (Employer of Record)** acts as the sole legal employer on paper, assuming all legal and compliance liabilities for the worker. A **PEO (Professional Employer Organization)** acts as a co-employer. Under a PEO, your company must already have a local legal entity in the country or state, and you share legal liabilities with the PEO provider.</p></div>
+        </div>
+        <div class="gp-faq-item">
+          <button class="gp-faq-q" aria-expanded="false">What benefits can I offer through EmployeeOS EOR?</button>
+          <div class="gp-faq-a"><p>We offer localized benefit packages tailored to each country. This includes mandatory statutory requirements (like local health plans or pensions) and supplementary benefits (life insurance, dental, vision, mental health budgets, and wellness stipends) at corporate-negotiated rates.</p></div>
+        </div>
+        <div class="gp-faq-item">
+          <button class="gp-faq-q" aria-expanded="false">How is intellectual property protected under EOR?</button>
+          <div class="gp-faq-a"><p>We employ a dual-contract IP protection mechanism called EmployeeOS **IP Guard**. We sign strict IP transfer agreements with the employee under local laws, which immediately assign all patents, software, designs, and code to EmployeeOS, and we legally transfer 100% of those rights back to your business.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section class="gp-bottom-cta" id="bottom-cta" style="background: linear-gradient(135deg, #831843 0%, #be185d 50%, #9d174d 100%);">
+    <div class="container gp-bottom-cta-inner">
+      <h2>Ready to expand your global team compliantly?</h2>
+      <p>Join thousands of growth companies that trust EmployeeOS to hire EOR employees in 100+ countries.</p>
+      <div class="gp-bottom-actions">
+        <a href="#demo" class="gp-bottom-btn-primary" style="color: #be185d;">Book a demo</a>
+        <a href="pricing.html" class="gp-bottom-btn-outline">See pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 4h7a4 4 0 0 1 4 4 4 4 0 0 1-2.5 3.7L18 20h-3.2l-2.3-7.8H9V20H6V4zm3 2.4v3.8h4a1.6 1.6 0 0 0 1.6-1.9A1.6 1.6 0 0 0 13 6.4H9z" fill="white"/></svg></span>
+          <span class="logo-text">EmployeeOS</span>
+        </a>
+        <p class="footer-tagline">Global employment infrastructure for modern businesses.</p>
+        <p class="footer-copy">&#xa9; 2026 EmployeeOS Technology, Inc. All rights reserved.</p>
+      </div>
+      <div class="footer-col"><h4>Products</h4><ul>
+        <li><a href="global-payroll.html">Global Payroll</a></li>
+        <li><a href="employer-of-record.html">Employer of Record</a></li>
+        <li><a href="contractor-management.html">Contractor Management</a></li>
+        <li><a href="#">HR Management</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="peo.html">PEO</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Company</h4><ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Partners</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Resources</h4><ul>
+        <li><a href="#">Country Guides</a></li>
+        <li><a href="#">HR Glossary</a></li>
+        <li><a href="#">Cost Calculator</a></li>
+        <li><a href="#">Webinars</a></li>
+        <li><a href="#">Customer Stories</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+        <li><a href="#">Security</a></li>
+      </ul></div>
+    </div>
+  </footer>
+
+  <!-- ── FLOATING STICKY BOTTOM BAR ── -->
+  <aside class="gp-sticky-bar eor-theme-sticky-bar" id="gpStickyBar" aria-label="Quick Actions Bar">
+    <div class="gp-sticky-bar-content">
+      <div class="gp-sticky-bar-icon" style="background: rgba(255,255,255,0.2);">❖</div>
+      <div class="gp-sticky-bar-text">
+        <h4>Ready to expand your global team compliantly?</h4>
+        <p>Join thousands of growth companies that trust EmployeeOS to hire EOR employees in 100+ countries.</p>
+      </div>
+    </div>
+    <div class="gp-sticky-bar-actions">
+      <a href="#demo" class="gp-sticky-btn-primary">Book a demo</a>
+      <a href="pricing.html" class="gp-sticky-btn-secondary">See pricing</a>
+      <button class="gp-sticky-close" onclick="document.getElementById('gpStickyBar').classList.add('hidden')" aria-label="Close bar">&times;</button>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+  <script src="employer-of-record.js"></script>
+</body>
+</html>
+

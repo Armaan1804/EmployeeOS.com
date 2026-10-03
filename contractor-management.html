@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contractor Management — Onboard &amp; Pay Global Contractors | EmployeeOS</title>
+  <meta name="description"
+    content="Onboard contractors in minutes, create localized compliant agreements, and pay invoices with one click. Free to start, pay only for active contractors." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="product-page.css" />
+  <style>
+    /* Page specific theme overrides for CM - Purple theme */
+    .cm-theme-hero {
+      background:
+        radial-gradient(ellipse 80% 80% at 70% 40%, rgba(124, 58, 237, 0.45) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 60% at 30% 70%, rgba(109, 40, 217, 0.35) 0%, transparent 60%),
+        linear-gradient(rgba(255, 255, 255, .03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .03) 1px, transparent 1px),
+        #130a1c;
+      background-size: auto, auto, 28px 28px, 28px 28px, auto;
+    }
+
+    .cm-theme-badge {
+      background: #faf5ff !important;
+      color: #7c3aed !important;
+    }
+
+    .cm-theme-btn {
+      background: #7c3aed !important;
+      color: white !important;
+      box-shadow: 0 4px 14px rgba(124, 58, 237, 0.35) !important;
+    }
+
+    .cm-theme-btn:hover {
+      background: #6d28d9 !important;
+    }
+
+    .cm-theme-text-accent {
+      color: #7c3aed !important;
+    }
+
+    .cm-theme-btn-nav-demo {
+      background: #7c3aed !important;
+    }
+
+    .cm-theme-btn-nav-demo:hover {
+      background: #6d28d9 !important;
+    }
+
+    #pricing .gp-pricing-inner {
+      grid-template-columns: 1fr 1.6fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .pricing-double-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      align-items: stretch;
+      width: 100%;
+    }
+
+    .pricing-double-cards .gp-pricing-card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      min-width: 0;
+    }
+
+    .pricing-double-cards .gp-pricing-card .gp-price-cta {
+      margin-top: auto !important;
+    }
+
+    @media(max-width: 992px) {
+      #pricing .gp-pricing-inner {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    @media(max-width: 680px) {
+      .pricing-double-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .gp-ui-approvebtn {
+      transition: all 0.2s ease;
+    }
+
+    .gp-ui-approvebtn:hover {
+      background: #7c3aed !important;
+      color: #ffffff !important;
+      border-color: #7c3aed !important;
+      box-shadow: 0 3px 10px rgba(124, 58, 237, 0.3) !important;
+    }
+
+    /* Sticky Bar Purple Theme */
+    .cm-theme-sticky-bar {
+      background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%) !important;
+      box-shadow: 0 20px 50px rgba(124, 58, 237, 0.45), 0 8px 24px rgba(0, 0, 0, 0.3) !important;
+    }
+    .cm-theme-sticky-bar .gp-sticky-btn-primary {
+      color: #7c3aed !important;
+    }
+    .cm-theme-sticky-bar .gp-sticky-btn-primary:hover {
+      background: #faf5ff !important;
+      color: #6d28d9 !important;
+    }
+
+    /* Global Pink-to-Purple Overrides for Contractor Management */
+    .gp-demo-tab.active {
+      color: #7c3aed !important;
+    }
+
+    .gp-tag-pill {
+      background: #faf5ff !important;
+      color: #7c3aed !important;
+      border-color: #ddd6fe !important;
+    }
+
+    .gp-cta-outline {
+      color: #7c3aed !important;
+      border-color: #7c3aed !important;
+    }
+
+    .gp-cta-outline:hover {
+      background: #7c3aed !important;
+      color: #ffffff !important;
+    }
+
+    .gp-logo-label {
+      color: #7c3aed !important;
+    }
+
+    .gp-check {
+      background: #7c3aed !important;
+      color: #ffffff !important;
+    }
+
+    .gp-check-g {
+      color: #7c3aed !important;
+    }
+
+    .mega-ico[style*="be185d"],
+    .mega-ico[style*="fdf2f8"] {
+      background: #faf5ff !important;
+      color: #7c3aed !important;
+    }
+
+    .gp-bottom-cta {
+      background: linear-gradient(135deg, #24083a 0%, #7c3aed 50%, #6d28d9 100%) !important;
+    }
+
+    .gp-bottom-btn-primary {
+      color: #7c3aed !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header class="nav-wrapper" id="navbar">
+    <nav class="nav-inner container">
+      <a href="index.html" class="nav-logo" aria-label="EmployeeOS Home">
+        <span class="logo-mark">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M6 4h7a4 4 0 0 1 4 4 4 4 0 0 1-2.5 3.7L18 20h-3.2l-2.3-7.8H9V20H6V4zm3 2.4v3.8h4a1.6 1.6 0 0 0 1.6-1.9A1.6 1.6 0 0 0 13 6.4H9z"
+              fill="white" />
+          </svg>
+        </span>
+        <span class="logo-text">EmployeeOS</span>
+      </a>
+      <ul class="nav-links" role="list">
+
+        <!-- PRODUCTS -->
+        <li class="nav-item has-dropdown">
+          <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Products <span
+              class="chevron">&#8964;</span></button>
+          <div class="mega-menu mega-products" role="menu">
+            <div class="mega-body">
+              <div class="mega-left">
+                <p class="mega-section-label">GLOBAL EMPLOYMENT</p>
+                <div class="mega-cols">
+                  <a href="global-payroll.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#faf5ff;color:#7c3aed"><svg width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                        <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                      </svg></span>
+                    <div><strong>Global Payroll</strong>
+                      <p>Run compliant payroll easily</p>
+                    </div>
+                  </a>
+                  <a href="employer-of-record.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#faf5ff;color:#7c3aed"><svg width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <path
+                          d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                      </svg></span>
+                    <div><strong>Employer of Record</strong>
+                      <p>Expand globally with zero entity cost</p>
+                    </div>
+                  </a>
+                  <a href="contractor-of-record.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#faf5ff;color:#7c3aed"><svg width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <path d="M3 9h18M9 21V9" />
+                      </svg></span>
+                    <div><strong>Contractor of Record</strong>
+                      <p>Compliantly engage contractors worldwide</p>
+                    </div>
+                  </a>
+                  <a href="contractor-management.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#faf5ff;color:#7c3aed"><svg width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                      </svg></span>
+                    <div><strong>Contractor Management</strong>
+                      <p>Onboard and manage contractors globally</p>
+                    </div>
+                  </a>
+                  <a href="peo.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#faf5ff;color:#7c3aed"><svg width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                      </svg></span>
+                    <div><strong>PEO</strong>
+                      <p>Outsource complex employment tasks</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-right mega-right-services">
+                <p class="mega-section-label">SERVICES</p>
+                <ul>
+                  <li><a href="ask-an-expert.html">Ask an Expert</a></li>
+                  <li><a href="background-checks.html">Background Checks</a></li>
+                  <li><a href="compliance-watchtower.html">Compliance Watchtower</a></li>
+                  <li><a href="device-management.html">Device Management</a></li>
+                  <li><a href="entity-setup.html">Entity Setup</a></li>
+                  <li><a href="mobility-relocation.html">Mobility &amp; Relocation</a></li>
+                  <li><a href="benefits.html">Benefits</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Resources <span
+              class="chevron">&#8964;</span></button>
+          <div class="mega-menu mega-resources" role="menu">
+            <div class="mega-body">
+              <div class="mega-left">
+                <p class="mega-section-label">RESOURCE LIBRARY</p>
+                <div class="mega-cols">
+                  <a href="blog.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                          d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5V4.5z" />
+                      </svg></span>
+                    <div><strong>Blog</strong>
+                      <p>Latest global employment insights &amp; guides</p>
+                    </div>
+                  </a>
+                  <a href="ask-an-expert.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                      </svg></span>
+                    <div><strong>Ask an Expert</strong>
+                      <p>Get answers to complex global HR questions</p>
+                    </div>
+                  </a>
+                  <a href="compliance-watchtower.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                      </svg></span>
+                    <div><strong>Compliance Watchtower</strong>
+                      <p>Stay ahead of evolving global labor laws</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-right">
+                <p class="mega-section-label">FEATURED BLOG</p>
+                <a href="blog/ultimate-eor-guide.html" class="mega-case-card" role="menuitem">
+                  <div class="mega-case-img blog-post-img">
+                    <img src="images/blog/eor-guide.png" alt="Featured: EOR Guide"
+                      style="width:100%;height:100%;object-fit:cover;" />
+                  </div>
+                  <span class="mega-case-text">The Ultimate Guide to Employer of Record (EOR) hiring in 2026.</span>
+                  <span class="mega-learn-more">Read article →</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-lang">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <path
+              d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+          <span>EN</span>
+          <span class="chevron">&#8964;</span>
+        </div>
+        <a href="#demo" class="btn-nav-demo cm-theme-btn-nav-demo">Book a demo</a>
+      </div>
+      <button class="nav-mobile-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="gp-hero cm-theme-hero" id="hero">
+    <div class="container gp-hero-inner">
+      <div class="gp-hero-text">
+        <p class="gp-eyebrow">Global Contractor Operations</p>
+        <h1 class="gp-hero-h1">International contractors.<br />One simple platform.</h1>
+        <p class="gp-hero-sub">Onboard global contractors in minutes, create localized compliant agreements, and pay invoices with one click.</p>
+        <a href="#demo" class="gp-hero-cta cm-theme-text-accent">Book a demo</a>
+      </div>
+      <div class="gp-hero-visual">
+        <img src="images/contracthero.png" alt="EmployeeOS Contractor Operations" class="gp-hero-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGO BAR -->
+  <section class="gp-logo-bar">
+    <div class="container">
+      <p class="gp-logo-label" style="color: #7c3aed;">GLOBAL CONTRACTORS PAID SECURELY BY EMPLOYEEOS</p>
+      <div class="logo-track-wrap">
+        <div class="logo-track">
+          <span class="plogo">GitLab</span><span class="plogo">MIZUHO</span>
+          <span class="plogo">Lovable</span><span class="plogo">box</span>
+          <span class="plogo">miro</span><span class="plogo">KFC</span>
+          <span class="plogo">Heineken</span><span class="plogo">BYD</span>
+          <span class="plogo">Vercel</span><span class="plogo">ANTHROPIC</span>
+          <span class="plogo">DATADOG</span><span class="plogo">Mercury</span>
+          <span class="plogo">GitLab</span><span class="plogo">MIZUHO</span>
+          <span class="plogo">Lovable</span><span class="plogo">box</span>
+          <span class="plogo">miro</span><span class="plogo">KFC</span>
+          <span class="plogo">Heineken</span><span class="plogo">BYD</span>
+          <span class="plogo">Vercel</span><span class="plogo">ANTHROPIC</span>
+          <span class="plogo">DATADOG</span><span class="plogo">Mercury</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THREE FEATURES PILLARS -->
+  <section class="gp-features-overview section" id="features">
+    <div class="container">
+      <h2 class="gp-section-h2">The complete suite for contractor management</h2>
+      <div class="gp-pillars">
+        <div class="gp-pillar">
+          <span class="gp-pillar-ico" style="background: #7c3aed;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M12 8v8M8 12h8" />
+            </svg>
+          </span>
+          <h3>Localized agreements</h3>
+          <p>Create, customize, and execute legal agreements drafted by regional labor law attorneys in 100+ countries.
+          </p>
+        </div>
+        <div class="gp-pillar">
+          <span class="gp-pillar-ico" style="background: #7c3aed;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </span>
+          <h3>One-click global payout</h3>
+          <p>Consolidate hundreds of freelancer invoices into a single bill. Pay everyone globally in one transaction.
+          </p>
+        </div>
+        <div class="gp-pillar">
+          <span class="gp-pillar-ico" style="background: #7c3aed;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+          </span>
+          <h3>Stripe Connect speed</h3>
+          <p>Payouts are dispatched instantly via Stripe Connect to contractor bank accounts with transparent currency
+            conversions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- WHY STATS -->
+  <section class="gp-why section" id="why">
+    <div class="container">
+      <h2 class="gp-section-h2">Why EmployeeOS Contractor Management?</h2>
+      <div class="gp-stats-grid">
+        <div class="gp-stat-card" style="border-top: 4px solid #7c3aed;">
+          <span class="gp-stat-value" style="color: #7c3aed;">$29</span>
+          <h3 class="gp-stat-label">Per active contractor/month</h3>
+          <p>Free to start. Only pay for contractors you actively transact with during a billing cycle.</p>
+        </div>
+        <div class="gp-stat-card" style="border-top: 4px solid #7c3aed;">
+          <span class="gp-stat-value" style="color: #7c3aed;">120+</span>
+          <h3 class="gp-stat-label">Countries with local payouts</h3>
+          <p>Disburse payments directly to contractor bank accounts in their native currencies via Stripe Connect.</p>
+        </div>
+        <div class="gp-stat-card" style="border-top: 4px solid #7c3aed;">
+          <span class="gp-stat-value" style="color: #7c3aed;">1 Click</span>
+          <h3 class="gp-stat-label">Batch invoice payments</h3>
+          <p>Say goodbye to writing individual wires. Review, approve, and settle all invoices in a single transaction.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO SECTION -->
+  <section class="gp-demo-section section" id="demo-tour">
+    <div class="gp-demo-sticky-wrapper">
+      <div class="container gp-demo-inner">
+        <div class="gp-demo-gallery">
+          <div class="gp-demo-tabs" role="tablist">
+            <button class="gp-demo-tab active" onclick="switchMockpay(1, this)" id="tab-btn-1">AI-powered</button>
+            <button class="gp-demo-tab" onclick="switchMockpay(2, this)" id="tab-btn-2">Infrastructure</button>
+            <button class="gp-demo-tab" onclick="switchMockpay(3, this)" id="tab-btn-3">Compliance</button>
+          </div>
+          <div class="gp-demo-img-frame">
+            <div class="gp-mockpay-track" id="mockpayTrack">
+              <img src="images/mockpay1.png" alt="AI-powered" class="gp-mockpay-slide" />
+              <img src="images/mockpay2.png" alt="Infrastructure" class="gp-mockpay-slide" />
+              <img src="images/mockpay3.png" alt="Compliance" class="gp-mockpay-slide" />
+            </div>
+          </div>
+        </div>
+        <div class="gp-demo-text-card" id="mockpayTextCard">
+          <span class="gp-tag-pill" id="mockpayTag" style="background: rgba(124,58,237,0.1); color: #7c3aed;">AI-powered</span>
+          <h2 id="mockpayTitle">Scalable contractor management with automated payouts</h2>
+          <p id="mockpayDesc">EmployeeOS uses intelligent automation to process contractor invoices, verify compliance, and execute batch bank payouts across 120+ countries.</p>
+          <ul class="gp-ai-list" id="mockpayList">
+            <li><span class="gp-check" style="color: #7c3aed;">&#x2713;</span> Automatic invoice collection &amp; OCR data parsing</li>
+            <li><span class="gp-check" style="color: #7c3aed;">&#x2713;</span> One-click batch invoice approvals and payouts</li>
+            <li><span class="gp-check" style="color: #7c3aed;">&#x2713;</span> Direct local bank payouts via Stripe Connect</li>
+            <li><span class="gp-check" style="color: #7c3aed;">&#x2713;</span> Automated W-8BEN/W-9 collection &amp; archiving</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- FAQ -->
+  <section class="gp-faq section" id="faq">
+    <div class="container gp-faq-inner">
+      <h2 class="gp-section-h2">Frequently Asked Questions</h2>
+      <div class="gp-faq-list">
+        <div class="gp-faq-item open">
+          <button class="gp-faq-q" aria-expanded="true">How much does Contractor Management cost?</button>
+          <div class="gp-faq-a">
+            <p>Our platform is free to configure. You only pay $29 per active contractor per month. If you
+              have registered freelancers who do not submit timesheets or receive payouts during a billing cycle, you
+              are billed $0 for those workers.</p>
+          </div>
+        </div>
+        <div class="gp-faq-item">
+          <button class="gp-faq-q" aria-expanded="false">What payment options are supported?</button>
+          <div class="gp-faq-a">
+            <p>Clients can pay their consolidated contractor bills using wire transfers, ACH (U.S.), SEPA (Europe), or
+              major credit cards. Credit card payments incur a 3.5% payment processor fee.</p>
+          </div>
+        </div>
+        <div class="gp-faq-item">
+          <button class="gp-faq-q" aria-expanded="false">How do contractors receive payments?</button>
+          <div class="gp-faq-a">
+            <p>Freelancers receive payouts directly to their bank accounts via Stripe Connect. We support payouts in
+              local currencies across 120+ countries, with standard bank transfers clearing in 1–2 business days.</p>
+          </div>
+        </div>
+        <div class="gp-faq-item">
+          <button class="gp-faq-q" aria-expanded="false">What is Contractor Management Plus?</button>
+          <div class="gp-faq-a">
+            <p>Contractor Management Plus ($99/contractor/month) is an upgraded compliance tier. It provides automated
+              audits on freelancer work habits and adds up to $100,000 in legal indemnity coverage. If local authorities
+              dispute the worker status, EmployeeOS covers classification-related fines and penalties up to the limit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section class="gp-bottom-cta" id="bottom-cta"
+    style="background: linear-gradient(135deg, #24083a 0%, #7c3aed 50%, #6d28d9 100%);">
+    <div class="container gp-bottom-cta-inner">
+      <h2>Ready to streamline your global contractor administration?</h2>
+      <p>Invite your global contractors in minutes.</p>
+      <div class="gp-bottom-actions">
+        <a href="#demo" class="gp-bottom-btn-primary" style="color: #7c3aed;">Book a demo</a>
+        <a href="pricing.html" class="gp-bottom-btn-outline">See pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M6 4h7a4 4 0 0 1 4 4 4 4 0 0 1-2.5 3.7L18 20h-3.2l-2.3-7.8H9V20H6V4zm3 2.4v3.8h4a1.6 1.6 0 0 0 1.6-1.9A1.6 1.6 0 0 0 13 6.4H9z"
+                fill="white" />
+            </svg></span>
+          <span class="logo-text">EmployeeOS</span>
+        </a>
+        <p class="footer-tagline">Global employment infrastructure for modern businesses.</p>
+        <p class="footer-copy">&#xa9; 2026 EmployeeOS Technology, Inc. All rights reserved.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="global-payroll.html">Global Payroll</a></li>
+          <li><a href="employer-of-record.html">Employer of Record</a></li>
+          <li><a href="contractor-management.html">Contractor Management</a></li>
+          <li><a href="#">HR Management</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="peo.html">PEO</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Country Guides</a></li>
+          <li><a href="#">HR Glossary</a></li>
+          <li><a href="#">Cost Calculator</a></li>
+          <li><a href="#">Webinars</a></li>
+          <li><a href="#">Customer Stories</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Security</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── FLOATING STICKY BOTTOM BAR ── -->
+  <aside class="gp-sticky-bar cm-theme-sticky-bar" id="gpStickyBar" aria-label="Quick Actions Bar">
+    <div class="gp-sticky-bar-content">
+      <div class="gp-sticky-bar-icon" style="background: rgba(255,255,255,0.2);">❖</div>
+      <div class="gp-sticky-bar-text">
+        <h4>Ready to streamline your global contractor administration?</h4>
+        <p>Invite your global contractors in minutes.</p>
+      </div>
+    </div>
+    <div class="gp-sticky-bar-actions">
+      <a href="#demo" class="gp-sticky-btn-primary" style="color: #7c3aed;">Book a demo</a>
+      <a href="pricing.html" class="gp-sticky-btn-secondary">See pricing</a>
+      <button class="gp-sticky-close" onclick="document.getElementById('gpStickyBar').classList.add('hidden')" aria-label="Close bar">&times;</button>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+  <script src="contractor-management.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EmployeeOS — Global employment runs on EmployeeOS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header class="nav-wrapper" id="navbar">
+    <nav class="nav-inner container">
+      <a href="index.html" class="nav-logo" aria-label="EmployeeOS Home">
+        <span class="logo-mark">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M6 4h7a4 4 0 0 1 4 4 4 4 0 0 1-2.5 3.7L18 20h-3.2l-2.3-7.8H9V20H6V4zm3 2.4v3.8h4a1.6 1.6 0 0 0 1.6-1.9A1.6 1.6 0 0 0 13 6.4H9z"
+              fill="white" />
+          </svg>
+        </span>
+        <span class="logo-text">EmployeeOS</span>
+      </a>
+      <ul class="nav-links" role="list">
+
+        <!-- PRODUCTS -->
+        <li class="nav-item has-dropdown">
+          <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Products <span
+              class="chevron">&#8964;</span></button>
+          <div class="mega-menu mega-products" role="menu">
+            <div class="mega-body">
+              <div class="mega-left">
+                <p class="mega-section-label">GLOBAL EMPLOYMENT</p>
+                <div class="mega-cols">
+                  <a href="global-payroll.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                        <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                      </svg></span>
+                    <div><strong>Global Payroll</strong>
+                      <p>Run compliant payroll easily</p>
+                    </div>
+                  </a>
+                  <a href="employer-of-record.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <path
+                          d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                      </svg></span>
+                    <div><strong>Employer of Record</strong>
+                      <p>Expand globally with zero entity cost</p>
+                    </div>
+                  </a>
+                  <a href="contractor-of-record.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <path d="M3 9h18M9 21V9" />
+                      </svg></span>
+                    <div><strong>Contractor of Record</strong>
+                      <p>Compliantly engage contractors worldwide</p>
+                    </div>
+                  </a>
+                  <a href="contractor-management.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                      </svg></span>
+                    <div><strong>Contractor Management</strong>
+                      <p>Onboard and manage contractors globally</p>
+                    </div>
+                  </a>
+                  <a href="peo.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#fdf2f8;color:#be185d"><svg width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                      </svg></span>
+                    <div><strong>PEO</strong>
+                      <p>Outsource complex employment tasks</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-right mega-right-services">
+                <p class="mega-section-label">SERVICES</p>
+                <ul>
+                  <li><a href="ask-an-expert.html">Ask an Expert</a></li>
+                  <li><a href="background-checks.html">Background Checks</a></li>
+                  <li><a href="compliance-watchtower.html">Compliance Watchtower</a></li>
+                  <li><a href="device-management.html">Device Management</a></li>
+                  <li><a href="entity-setup.html">Entity Setup</a></li>
+                  <li><a href="mobility-relocation.html">Mobility &amp; Relocation</a></li>
+                  <li><a href="benefits.html">Benefits</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item has-dropdown">
+          <button class="nav-btn" aria-haspopup="true" aria-expanded="false">Resources <span
+              class="chevron">&#8964;</span></button>
+          <div class="mega-menu mega-resources" role="menu">
+            <div class="mega-body">
+              <div class="mega-left">
+                <p class="mega-section-label">RESOURCE LIBRARY</p>
+                <div class="mega-cols">
+                  <a href="blog.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                          d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5V4.5z" />
+                      </svg></span>
+                    <div><strong>Blog</strong>
+                      <p>Latest global employment insights &amp; guides</p>
+                    </div>
+                  </a>
+                  <a href="ask-an-expert.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                      </svg></span>
+                    <div><strong>Ask an Expert</strong>
+                      <p>Get answers to complex global HR questions</p>
+                    </div>
+                  </a>
+                  <a href="compliance-watchtower.html" class="mega-item" role="menuitem">
+                    <span class="mega-ico" style="background:#eff6ff;color:#2563eb"><svg width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                      </svg></span>
+                    <div><strong>Compliance Watchtower</strong>
+                      <p>Stay ahead of evolving global labor laws</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="mega-right">
+                <p class="mega-section-label">FEATURED BLOG</p>
+                <a href="blog/ultimate-eor-guide.html" class="mega-case-card" role="menuitem">
+                  <div class="mega-case-img blog-post-img">
+                    <img src="images/blog/eor-guide.png" alt="Featured: EOR Guide"
+                      style="width:100%;height:100%;object-fit:cover;" />
+                  </div>
+                  <span class="mega-case-text">The Ultimate Guide to Employer of Record (EOR) hiring in 2026.</span>
+                  <span class="mega-learn-more">Read article →</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="nav-lang">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <path
+              d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+          <span>EN</span>
+          <span class="chevron">&#8964;</span>
+        </div>
+        <a href="#demo" class="btn-nav-demo">Book a demo</a>
+      </div>
+      <button class="nav-mobile-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner container">
+      <div class="hero-content">
+        <h1>Global employment<br>runs on EmployeeOS</h1>
+        <p class="hero-sub">Hire and pay anyone in the world — with the compliance, reliability, and local expertise
+          that only owned infrastructure delivers.</p>
+        <div class="hero-ctas">
+          <a href="#demo" class="btn btn-demo">Book a demo</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <img src="images/indexHero.png" alt="EmployeeOS Global Employment" class="hero-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGO BAR -->
+  <section class="logo-bar" aria-label="Trusted by global companies">
+    <div class="container">
+      <p class="logo-bar-label">GLOBAL COMPANIES GROW WITH EMPLOYEEOS</p>
+      <div class="logo-track-wrap">
+        <div class="logo-track">
+          <span class="plogo">MIZUHO</span>
+          <span class="plogo">&#9632; Lovable</span>
+          <span class="plogo">box</span>
+          <span class="plogo">miro</span>
+          <span class="plogo">KFC</span>
+          <span class="plogo">&#9733; Heineken</span>
+          <span class="plogo">BYD</span>
+          <span class="plogo">&#9650; Vercel</span>
+          <span class="plogo">ANTHROPIC</span>
+          <span class="plogo">WORKDAY</span>
+          <span class="plogo">STRIPE</span>
+          <span class="plogo">NOTION</span>
+          <!-- duplicate for seamless loop -->
+          <span class="plogo">MIZUHO</span>
+          <span class="plogo">&#9632; Lovable</span>
+          <span class="plogo">box</span>
+          <span class="plogo">miro</span>
+          <span class="plogo">KFC</span>
+          <span class="plogo">&#9733; Heineken</span>
+          <span class="plogo">BYD</span>
+          <span class="plogo">&#9650; Vercel</span>
+          <span class="plogo">ANTHROPIC</span>
+          <span class="plogo">WORKDAY</span>
+          <span class="plogo">STRIPE</span>
+          <span class="plogo">NOTION</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUILT FOR EVERY ROLE SECTION -->
+  <section class="roles-section section" id="roles">
+    <div class="container roles-inner">
+      <div class="roles-header">
+        <h2>Built for every <span class="purple-highlight">role</span> in your company</h2>
+        <p class="roles-sub">From the CIO signing off on security to the new hire checking their first payslip — the same platform, different value for everyone.</p>
+      </div>
+
+      <div class="role-tabs-grid" role="tablist" aria-label="Company Roles">
+        
+        <!-- CIO (Default Active) -->
+        <button class="role-tab active" data-role="cio" role="tab" aria-selected="true" onclick="switchRoleTab('cio')">
+          <div class="role-avatar-card">
+            <div class="role-avatar-img cio-avatar">
+              <img src="images/CIO.png" alt="CIO" class="role-icon-img" />
+            </div>
+            <span class="role-label">CIO</span>
+          </div>
+        </button>
+
+        <!-- CHRO -->
+        <button class="role-tab" data-role="chro" role="tab" aria-selected="false" onclick="switchRoleTab('chro')">
+          <div class="role-avatar-card">
+            <div class="role-avatar-img chro-avatar">
+              <img src="images/CIRO.png" alt="CHRO" class="role-icon-img" />
+            </div>
+            <span class="role-label">CHRO</span>
+          </div>
+        </button>
+
+        <!-- Payroll Admin -->
+        <button class="role-tab" data-role="payroll" role="tab" aria-selected="false" onclick="switchRoleTab('payroll')">
+          <div class="role-avatar-card">
+            <div class="role-avatar-img payroll-avatar">
+              <img src="images/Payroll Manager.png" alt="Payroll Admin" class="role-icon-img" />
+            </div>
+            <span class="role-label">Payroll Admin</span>
+          </div>
+        </button>
+
+        <!-- Managers -->
+        <button class="role-tab" data-role="managers" role="tab" aria-selected="false" onclick="switchRoleTab('managers')">
+          <div class="role-avatar-card">
+            <div class="role-avatar-img managers-avatar">
+              <img src="images/Manager.png" alt="Managers" class="role-icon-img" />
+            </div>
+            <span class="role-label">Managers</span>
+          </div>
+        </button>
+
+        <!-- Employees -->
+        <button class="role-tab" data-role="employees" role="tab" aria-selected="false" onclick="switchRoleTab('employees')">
+          <div class="role-avatar-card">
+            <div class="role-avatar-img employees-avatar">
+              <img src="images/Employee.png" alt="Employees" class="role-icon-img" />
+            </div>
+            <span class="role-label">Employees</span>
+          </div>
+        </button>
+
+      </div>
+
+      <!-- Dynamic Content Box for Selected Role -->
+      <div class="role-details-panel" id="roleDetailsPanel">
+        <div class="role-grid-container">
+          
+          <!-- Left Column: Without vs With EmployeeOS -->
+          <div class="role-left-col">
+            <div class="role-without-card">
+              <h3>Without EmployeeOS</h3>
+              <ul class="role-without-list">
+                <li><span class="role-green-dot"></span> Five vendor contracts</li>
+                <li><span class="role-green-dot"></span> Five SSO setups</li>
+                <li><span class="role-green-dot"></span> Five compliance risks</li>
+              </ul>
+            </div>
+            <div class="role-with-card">
+              <h3>With EmployeeOS</h3>
+              <p>One platform with SOC 2 + ISO 27001 certification, native SSO and API, and a dedicated implementation team. Go live in 2–4 weeks, not months.</p>
+            </div>
+          </div>
+
+          <!-- Right Column: Mint Green Container with Visual & Mockup -->
+          <div class="role-visual-card">
+            <div class="role-bg-mockup">
+              <div class="role-mockup-header">
+                <strong>My Tasks</strong>
+              </div>
+              <div class="role-mockup-item">
+                <strong>Security &amp; Access</strong>
+                <span>There are 4 tasks to review</span>
+              </div>
+              <div class="role-mockup-item">
+                <strong>SSO Integration</strong>
+                <span>Active SAML 2.0 &amp; Okta</span>
+              </div>
+              <div class="role-mockup-item">
+                <strong>Data Governance</strong>
+                <span>ISO 27001 verified</span>
+              </div>
+            </div>
+            <img src="images/CIO.png" alt="Chief Information Officer" class="role-person-img" />
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- OWNED INFRASTRUCTURE (ref6) -->
+  <section class="infra-section section" id="infrastructure">
+    <div class="container infra-inner">
+      <div class="infra-content">
+        <p class="section-label-purple">EMPLOYEEOS ENGINE</p>
+        <h2>What makes 33,000+ companies back EmployeeOS</h2>
+        <p class="infra-lead">Whether you're replacing spreadsheets or outgrowing your current HRMS, here's what changes on day one.</p>
+
+        <div class="infra-features-list">
+          <div class="infra-feature-item">
+            <div class="infra-feat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+              <h3>Stop stitching together 5 tools for one employee lifecycle</h3>
+              <p>Recruitment, onboarding, payroll, attendance, PMS, expense claims, exit, alumni — all under a single login. One employee record, zero duplicate data entry.</p>
+            </div>
+          </div>
+
+          <div class="infra-feature-item">
+            <div class="infra-feat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+              <h3>Close payroll in minutes, not days</h3>
+              <p>Auto-computed PF, ESI, PT, LWF, and TDS across all 28 states. Statutory updates applied before you even notice. One-click payroll close, direct government portal filing.</p>
+            </div>
+          </div>
+
+          <div class="infra-feature-item">
+            <div class="infra-feat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+              <h3>EmployeeOS NAVOS — the only AI HR assistant you’ll ever need</h3>
+              <p>Grant leave, pull reports, update records, approve requisitions — by typing what you need, not clicking through menus. NAVOS is execution-first and respects your roles and permissions. Included on all paid plans.</p>
+            </div>
+          </div>
+
+          <div class="infra-feature-item">
+            <div class="infra-feat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+              <h3>Attendance data that actually flows into payroll</h3>
+              <p>Biometric, GPS, GeoMark+, or VISAGE face recognition — every punch flows into one leave and attendance engine, straight through to payroll. No reconciliation spreadsheets.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HR TIMEBACK FEATURE HIGHLIGHT BANNER (Purple Theme) -->
+  <section class="hr-timeback-section section" id="hr-productivity">
+    <div class="container">
+      <div class="hr-timeback-card">
+        <div class="hr-timeback-badge">HR PRODUCTIVITY & SELF-SERVICE</div>
+        <h2>Our HR team shouldn't be answering <span>"where's my payslip?"</span> 200 times a month</h2>
+        <p>Payslips, leave balances, claims, Form 16, tax declarations — employees access everything from the EmployeeOS app. HR gets hours back, every single week.</p>
+        <div class="hr-timeback-stats">
+          <div class="hr-stat-pill">
+            <strong>85%</strong>
+            <span>Reduction in HR tickets</span>
+          </div>
+          <div class="hr-stat-pill">
+            <strong>12+ hrs</strong>
+            <span>Saved per HR manager weekly</span>
+          </div>
+          <div class="hr-stat-pill">
+            <strong>100%</strong>
+            <span>Self-service employee access</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTEGRATIONS, API, MCP CARDS (ref7) -->
+  <section class="iamcards-section section" id="integrations">
+    <div class="container">
+      <p class="section-label-purple">INTEGRATIONS, API, AND MCP</p>
+      <h2 class="iamcards-headline">Your workflows, your way, on our infrastructure</h2>
+      <div class="iamcards-grid">
+        <article class="iam-card">
+          <div class="iam-card-visual mcp-visual-bg">
+            <img src="images/MCP.png" alt="EmployeeOS MCP" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
+          </div>
+          <p class="iam-label">MCP</p>
+          <h3>Deploy AI agents on real employment data</h3>
+          <p>EmployeeOS MCP gives any AI agent a live, secure connection to payroll, contracts, compliance data, and org
+            structure — no API keys, no exports, no custom integrations needed.</p>
+        </article>
+        <article class="iam-card">
+          <div class="iam-card-visual int-visual-bg">
+            <img src="images/Integrations.png" alt="EmployeeOS Integrations" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
+          </div>
+          <p class="iam-label">INTEGRATIONS</p>
+          <h3>Plug EmployeeOS into your stack</h3>
+          <p>Keep the HR tools your team already uses. EmployeeOS runs the payroll and compliance underneath, natively
+            integrated with Workday, HiBob, BambooHR, Personio, and more.</p>
+        </article>
+        <article class="iam-card">
+          <div class="iam-card-visual api-visual-bg">
+            <img src="images/API.png" alt="EmployeeOS API" style="width:100%;height:100%;object-fit:cover;object-position:center;" />
+          </div>
+          <p class="iam-label">API</p>
+          <h3>Build on top of ours</h3>
+          <p>EmployeeOS is API-first by design. Use our REST API, webhooks, and CLI to build custom workflows, embed
+            global employment into your own product, or extend EmployeeOS however your business needs.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOSYSTEM SECTION -->
+  <section class="hard-section" id="why">
+    <div class="container hard-inner">
+      <h2>More than software. An ecosystem that grows with your HR team.</h2>
+      <p>Free courses, a nationwide HR community, compliance wikis, and expert webinars — all included with every plan. No premium tier required.</p>
+      <a href="#demo" class="btn btn-demo">Book a demo</a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS (ref4) -->
+  <section class="testimonials-section section" id="testimonials">
+    <div class="container">
+      <div class="testi-header">
+        <h2>A word from our customers</h2>
+        <p>Join customers who trust EmployeeOS to transform their business.</p>
+      </div>
+      <div class="testi-track-wrap">
+        <div class="testi-track">
+          <article class="testi-card">
+            <div class="testi-company">
+              <span class="testi-company-logo rt">&#9194;</span>
+              <strong>REVERSE TECH</strong>
+            </div>
+            <blockquote>"We run monthly, semi-monthly and hourly payroll in multiple different currencies around the
+              world and our Finance Manager has full visibility in a single platform. With EmployeeOS, you can make it
+              happen."</blockquote>
+            <footer class="testi-person">
+              <img src="https://i.pravatar.cc/44?img=47" alt="Marisol Jiménez" />
+              <div>
+                <strong>Marisol Jiménez</strong>
+                <span>Head of People</span>
+              </div>
+            </footer>
+            <a href="#stories" class="testi-read-link">Read full customer story →</a>
+          </article>
+          <article class="testi-card">
+            <div class="testi-company">
+              <span class="testi-company-logo hp">&#8644;</span>
+              <strong>HomeProject</strong>
+            </div>
+            <blockquote>"We work with 460+ Contractors globally. I'd need to employ 5 or 6 people full time to keep on
+              top of compliance, administration and payroll. EmployeeOS has definitely been a time and money saver for
+              us."</blockquote>
+            <footer class="testi-person">
+              <img src="https://i.pravatar.cc/44?img=51" alt="Erik Sveen" />
+              <div>
+                <strong>Erik Sveen</strong>
+                <span>Founder and CEO of HomeProject</span>
+              </div>
+            </footer>
+            <a href="#stories" class="testi-read-link">Read full customer story →</a>
+          </article>
+          <article class="testi-card">
+            <div class="testi-company">
+              <span class="testi-company-logo se">&#9654;</span>
+              <strong>SEI Consulting</strong>
+            </div>
+            <blockquote>"We see EmployeeOS as a leading and trusted partner. Their expert support, streamlined our
+              processes and created more opportunities for growth and global HR operations."</blockquote>
+            <footer class="testi-person">
+              <img src="https://i.pravatar.cc/44?img=32" alt="Maria Shkaruppa" />
+              <div>
+                <strong>Maria Shkaruppa</strong>
+                <span>Senior Global Mobility Manager</span>
+              </div>
+            </footer>
+            <a href="#stories" class="testi-read-link">Read full customer story →</a>
+          </article>
+          <article class="testi-card">
+            <div class="testi-company">
+              <span class="testi-company-logo lm">&#8734;</span>
+              <strong>LukeMcK Inc</strong>
+            </div>
+            <blockquote>"If we had to manage everything in-house, it would cost us well over $500,000 more each year.
+              EmployeeOS has been a huge cost saving and burden reduction for our finance team."</blockquote>
+            <footer class="testi-person">
+              <img src="https://i.pravatar.cc/44?img=15" alt="Luke McKinlay" />
+              <div>
+                <strong>Luke McKinlay</strong>
+                <span>VP of Finance</span>
+              </div>
+            </footer>
+            <a href="#stories" class="testi-read-link">Read full customer story →</a>
+          </article>
+
+          <!-- Duplicated set for continuous conveyor belt loop -->
+          <article class="testi-card" aria-hidden="true">
+            <div class="testi-company">
+              <span class="testi-company-logo rt">&#9194;</span>
+              <strong>REVERSE TECH</strong>
+            </div>
+            <blockquote>"We run monthly, semi-monthly and hourly payroll in multiple different currencies around the
+              world and our Finance Manager has full visibility in a single platform. With EmployeeOS, you can make it
+              happen."</blockquote>
+            <footer class="testi-person">
+              <img src="https://i.pravatar.cc/44?img=47" alt="Marisol Jiménez" />
+              <div>
+                <strong>Marisol Jiménez</strong>
+                <span>Head of People</span>
+              </div>
+            </footer>
+            <a href="#stories" class="testi-read-link">Read full customer story →</a>
+          </article>
+          <article class="testi-card" aria-hidden="true">
+            <div class="testi-company">
+              <span class="testi-company-logo hp">&#8644;</span>
+              <strong>HomeProject</strong>
+            </div>
+            <blockquote>"We work with 460+ Contractors globally. I'd need to employ 5 or 6 people full time to keep on
+              top of compliance, administration and payroll. EmployeeOS has definitely been a time and money saver for
+              us."</blockquote>
+            <footer class="testi-person">
+              <img src="https://i.pravatar.cc/44?img=51" alt="Erik Sveen" />
+              <div>
+                <strong>Erik Sveen</strong>
+                <span>Founder and CEO of HomeProject</span>
+              </div>
+            </footer>
+            <a href="#stories" class="testi-read-link">Read full customer story →</a>
+          </article>
+          <article class="testi-card" aria-hidden="true">
+            <div class="testi-company">
+              <span class="testi-company-logo se">&#9654;</span>
+              <strong>SEI Consulting</strong>
+            </div>
+            <blockquote>"We see EmployeeOS as a leading and trusted partner. Their expert support, streamlined our
+              processes and created more opportunities for growth and global HR operations."</blockquote>
+            <footer class="testi-person">
+              <img src="https://i.pravatar.cc/44?img=32" alt="Maria Shkaruppa" />
+              <div>
+                <strong>Maria Shkaruppa</strong>
+                <span>Senior Global Mobility Manager</span>
+              </div>
+            </footer>
+            <a href="#stories" class="testi-read-link">Read full customer story →</a>
+          </article>
+          <article class="testi-card" aria-hidden="true">
+            <div class="testi-company">
+              <span class="testi-company-logo lm">&#8734;</span>
+              <strong>LukeMcK Inc</strong>
+            </div>
+            <blockquote>"If we had to manage everything in-house, it would cost us well over $500,000 more each year.
+              EmployeeOS has been a huge cost saving and burden reduction for our finance team."</blockquote>
+            <footer class="testi-person">
+              <img src="https://i.pravatar.cc/44?img=15" alt="Luke McKinlay" />
+              <div>
+                <strong>Luke McKinlay</strong>
+                <span>VP of Finance</span>
+              </div>
+            </footer>
+            <a href="#stories" class="testi-read-link">Read full customer story →</a>
+          </article>
+        </div>
+      </div>
+      <div class="testi-footer-cta">
+        <a href="#stories" class="btn btn-pill-outline">Hear from our customers →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER (ref3) -->
+  <section class="cta-banner section" id="cta">
+    <div class="container">
+      <div class="cta-card">
+        <h2>Hiring internationally, converting contractors, or consolidating payroll? Talk to our team.</h2>
+        <a href="#demo" class="btn btn-demo">Book a demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ── -->
+  <section class="home-faq section" id="faq" aria-labelledby="faq-headline">
+    <div class="container home-faq-inner">
+      <div class="home-faq-header">
+        <h2 id="faq-headline">Frequently Asked Questions</h2>
+        <p>Everything you need to know about EmployeeOS. Can't find the answer? <a href="#contact"
+            class="faq-contact-link">Reach out to our team.</a></p>
+      </div>
+      <div class="home-faq-list" role="list">
+
+        <div class="hfaq-item open" role="listitem">
+          <button class="hfaq-q" aria-expanded="true">
+            <span>Do you require deposits or accruals?</span>
+            <span class="hfaq-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </span>
+          </button>
+          <div class="hfaq-a">
+            <p>We collect reserve payments only in rare, high-risk circumstances. Other EOR providers charge additional
+              deposits for PTO above the legal minimum, removing probation periods, incentive plans, and monthly
+              severance accruals. We don't. No upfront deposits required to get started.</p>
+          </div>
+        </div>
+
+        <div class="hfaq-item" role="listitem">
+          <button class="hfaq-q" aria-expanded="false">
+            <span>How does EmployeeOS prevent misclassification risk?</span>
+            <span class="hfaq-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </span>
+          </button>
+          <div class="hfaq-a">
+            <p>Our AI-powered Contractor of Record service continuously monitors contractor relationships for
+              misclassification signals. When risk is detected, we generate compliant reclassification workflows and
+              alert your HR team with a clear action plan — before regulators do.</p>
+          </div>
+        </div>
+
+        <div class="hfaq-item" role="listitem">
+          <button class="hfaq-q" aria-expanded="false">
+            <span>Does EmployeeOS require a minimum number of employees?</span>
+            <span class="hfaq-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </span>
+          </button>
+          <div class="hfaq-a">
+            <p>No. You can start with a single employee or contractor in a single country. Pricing scales with your team
+              — you only pay for active employees and contractors each month. There are no platform fees or seat
+              minimums.</p>
+          </div>
+        </div>
+
+        <div class="hfaq-item" role="listitem">
+          <button class="hfaq-q" aria-expanded="false">
+            <span>How do you handle currency conversions and FX rates?</span>
+            <span class="hfaq-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </span>
+          </button>
+          <div class="hfaq-a">
+            <p>EmployeeOS uses competitive mid-market exchange rates with a transparent conversion fee. We process
+              payments in the employee's local currency so there are no hidden FX markups on your invoices. All rates
+              are shown clearly before you approve each payroll run.</p>
+          </div>
+        </div>
+
+        <div class="hfaq-item" role="listitem">
+          <button class="hfaq-q" aria-expanded="false">
+            <span>What payment methods do you accept?</span>
+            <span class="hfaq-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </span>
+          </button>
+          <div class="hfaq-a">
+            <p>We accept all major payment methods: Credit/Debit Cards (Visa, Mastercard, Amex), Wire transfer, ACH,
+              SEPA, and Bank Transfer. Contractor payouts are processed via Stripe Connect. All payments are secured
+              with industry-standard encryption.</p>
+          </div>
+        </div>
+
+        <div class="hfaq-item" role="listitem">
+          <button class="hfaq-q" aria-expanded="false">
+            <span>Does EmployeeOS charge any platform or setup fees?</span>
+            <span class="hfaq-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </span>
+          </button>
+          <div class="hfaq-a">
+            <p>No platform fees, no setup fees, no onboarding fees. You pay only the flat monthly rate per employee or
+              contractor. Every invoice is itemized so you can see exactly what you're paying for.</p>
+          </div>
+        </div>
+
+        <div class="hfaq-item" role="listitem">
+          <button class="hfaq-q" aria-expanded="false">
+            <span>How fast can we onboard an international employee?</span>
+            <span class="hfaq-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </span>
+          </button>
+          <div class="hfaq-a">
+            <p>Our average onboarding time is 2.3 days. Standard EOR providers take 30+ days. We've built our own legal
+              entities in every country we operate, so there's no third-party broker delay — your employee can be
+              contracted and ready to start within days of signing.</p>
+          </div>
+        </div>
+
+        <div class="hfaq-item" role="listitem">
+          <button class="hfaq-q" aria-expanded="false">
+            <span>Is our data secure and compliant?</span>
+            <span class="hfaq-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </span>
+          </button>
+          <div class="hfaq-a">
+            <p>Yes. EmployeeOS is SOC 2 Type II certified, ISO 27001 certified, and GDPR aligned. All data is encrypted
+              in transit and at rest. Employment data belongs to you — we never share it with third parties or use it to
+              train AI models.</p>
+          </div>
+        </div>
+
+        <div class="hfaq-item" role="listitem">
+          <button class="hfaq-q" aria-expanded="false">
+            <span>Can employees access their own payslips and documents?</span>
+            <span class="hfaq-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </span>
+          </button>
+          <div class="hfaq-a">
+            <p>Yes. Every employee gets their own EmployeeOS dashboard with access to payslips, contracts, benefit
+              enrolment, time-off requests, and expense submissions. No email chains, no PDFs over WhatsApp — everything
+              in one place.</p>
+          </div>
+        </div>
+
+        <div class="hfaq-item" role="listitem">
+          <button class="hfaq-q" aria-expanded="false">
+            <span>Do you offer customer support?</span>
+            <span class="hfaq-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </span>
+          </button>
+          <div class="hfaq-a">
+            <p>Yes. Every plan includes a dedicated onboarding specialist and access to our global support team. EOR
+              customers get a named in-house HR and legal contact in each country they hire in. Support is available
+              24/7 via your EmployeeOS dashboard.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hfaq-still">
+        <p>Still have questions?</p>
+        <a href="#contact" class="btn btn-demo">Contact Our Team →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M6 4h7a4 4 0 0 1 4 4 4 4 0 0 1-2.5 3.7L18 20h-3.2l-2.3-7.8H9V20H6V4zm3 2.4v3.8h4a1.6 1.6 0 0 0 1.6-1.9A1.6 1.6 0 0 0 13 6.4H9z"
+                fill="white" />
+            </svg></span>
+          <span class="logo-text">EmployeeOS</span>
+        </a>
+        <p class="footer-tagline">Global employment infrastructure for modern businesses.</p>
+        <p class="footer-copy">&#xa9; 2026 EmployeeOS Technology, Inc. All rights reserved.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="global-payroll.html">Global Payroll</a></li>
+          <li><a href="employer-of-record.html">Employer of Record</a></li>
+          <li><a href="contractor-management.html">Contractor Management</a></li>
+          <li><a href="#">HR Management</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="peo.html">PEO</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Country Guides</a></li>
+          <li><a href="#">HR Glossary</a></li>
+          <li><a href="#">Cost Calculator</a></li>
+          <li><a href="#">Webinars</a></li>
+          <li><a href="#">Customer Stories</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Security</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="globe-3d.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
