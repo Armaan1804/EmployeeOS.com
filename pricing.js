@@ -254,3 +254,118 @@ window.calculateRoi = function() {
   if (elHours) elHours.textContent = `${hoursSaved.toLocaleString()} hrs`;
   if (elCost) elCost.textContent = `${sym}${costSaved.toLocaleString()}`;
 };
+
+/* ── Product Demo Tour (Scroll-Spy) ─────────────────── */
+const mockpayData = {
+  1: {
+    tag: 'AI-powered',
+    title: 'Scalable payroll with AI-powered workflows and automatic payments',
+    desc: 'EmployeeOS uses intelligent automation to run compliance checks, calculate deductions, and process salary payouts — all without manual intervention.',
+    items: [
+      'Automated compliance check across every jurisdiction',
+      'Automatic tax calculation and deductions',
+      'Direct salary payout in local currency',
+      'Real-time payroll status and audit trail'
+    ]
+  },
+  2: {
+    tag: 'Infrastructure',
+    title: 'Your international payroll processing hub',
+    desc: 'One platform to run payroll across 100+ countries. EmployeeOS owns the legal entities — meaning faster onboarding, no third-party risk, and complete data ownership.',
+    items: [
+      'Owned legal entities in every country — no intermediaries',
+      'Consolidated multi-country payroll runs',
+      'Real-time compliance monitoring',
+      'Integrated HR, benefits, and expense data'
+    ]
+  },
+  3: {
+    tag: 'Your team',
+    title: 'Your in-house payroll partner',
+    desc: 'Whether you have a robust payroll department or zero in-house expertise, EmployeeOS acts as your dedicated payroll specialist — handling the complexity so your team can focus on growth.',
+    items: [
+      'Dedicated payroll specialist per account',
+      '24/7 support in local languages',
+      'Proactive alerts for regulation changes',
+      'Custom payroll workflows and approvals'
+    ]
+  }
+};
+
+let currentMockpayStep = 1;
+
+function updateMockpayStep(step) {
+  if (currentMockpayStep === step && document.getElementById('mockpayTrack')?.style.transform) return;
+  currentMockpayStep = step;
+
+  const track = document.getElementById('mockpayTrack');
+  if (track) track.style.transform = `translateX(-${(step - 1) * 100}%)`;
+
+  const btn = document.getElementById(`tab-btn-${step}`);
+  if (btn) {
+    document.querySelectorAll('.gp-demo-tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+  }
+
+  const card = document.getElementById('mockpayTextCard');
+  const data = mockpayData[step];
+
+  if (card && data) {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(10px)';
+
+    setTimeout(() => {
+      const tagEl = document.getElementById('mockpayTag');
+      if (tagEl) tagEl.textContent = data.tag;
+
+      const titleEl = document.getElementById('mockpayTitle');
+      if (titleEl) titleEl.textContent = data.title;
+
+      const descEl = document.getElementById('mockpayDesc');
+      if (descEl) descEl.textContent = data.desc;
+
+      const listEl = document.getElementById('mockpayList');
+      if (listEl) {
+        listEl.innerHTML = data.items.map(item => `<li><span class="gp-check">\u2713</span> ${item}</li>`).join('');
+      }
+
+      card.style.opacity = '1';
+      card.style.transform = 'translateY(0)';
+    }, 150);
+  }
+}
+
+window.switchMockpay = function(num, btn) {
+  updateMockpayStep(num);
+};
+
+let isMockpayScrollTicking = false;
+window.addEventListener('scroll', () => {
+  if (isMockpayScrollTicking) return;
+  isMockpayScrollTicking = true;
+
+  requestAnimationFrame(() => {
+    isMockpayScrollTicking = false;
+    if (window.innerWidth <= 1024) return;
+
+    const section = document.getElementById('demo-tour');
+    if (!section) return;
+
+    const rect = section.getBoundingClientRect();
+    const totalScrollableDistance = section.offsetHeight - window.innerHeight;
+
+    if (totalScrollableDistance <= 0) return;
+
+    const progress = -rect.top / totalScrollableDistance;
+
+    if (progress >= -0.2 && progress <= 1.2) {
+      if (progress < 0.35) {
+        updateMockpayStep(1);
+      } else if (progress < 0.70) {
+        updateMockpayStep(2);
+      } else {
+        updateMockpayStep(3);
+      }
+    }
+  });
+}, { passive: true });

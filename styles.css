@@ -42,7 +42,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -55,7 +55,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-optical-sizing: auto;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 /* Display / heading type — PP Mori feel via Plus Jakarta Sans */
@@ -612,8 +612,8 @@ img {
 .hero {
   /* High-end tech & AI SaaS Deep Violet & Purple Gradient */
   background: radial-gradient(circle at 80% 20%, rgba(192, 132, 252, 0.22) 0%, transparent 45%),
-              radial-gradient(circle at 15% 75%, rgba(147, 51, 234, 0.28) 0%, transparent 40%),
-              linear-gradient(135deg, #0b0718 0%, #17092c 35%, #2a0d4a 70%, #150728 100%);
+    radial-gradient(circle at 15% 75%, rgba(147, 51, 234, 0.28) 0%, transparent 40%),
+    linear-gradient(135deg, #0b0718 0%, #17092c 35%, #2a0d4a 70%, #150728 100%);
   position: relative;
   min-height: 520px;
   display: flex;
@@ -1925,8 +1925,8 @@ img {
 
 .hr-timeback-card {
   background: radial-gradient(circle at 85% 15%, rgba(192, 132, 252, 0.28) 0%, transparent 50%),
-              radial-gradient(circle at 15% 85%, rgba(147, 51, 234, 0.35) 0%, transparent 45%),
-              linear-gradient(135deg, #0f0720 0%, #1c0a34 40%, #3b0764 75%, #18082e 100%);
+    radial-gradient(circle at 15% 85%, rgba(147, 51, 234, 0.35) 0%, transparent 45%),
+    linear-gradient(135deg, #0f0720 0%, #1c0a34 40%, #3b0764 75%, #18082e 100%);
   border-radius: 24px;
   padding: 4rem 3rem;
   text-align: center;
@@ -2332,8 +2332,8 @@ img {
    ================================================================ */
 .hard-section {
   background: radial-gradient(circle at 75% 25%, rgba(192, 132, 252, 0.22) 0%, transparent 45%),
-              radial-gradient(circle at 20% 75%, rgba(147, 51, 234, 0.25) 0%, transparent 40%),
-              linear-gradient(135deg, #0b0718 0%, #17092c 40%, #2e1052 75%, #150728 100%);
+    radial-gradient(circle at 20% 75%, rgba(147, 51, 234, 0.25) 0%, transparent 40%),
+    linear-gradient(135deg, #0b0718 0%, #17092c 40%, #2e1052 75%, #150728 100%);
   position: relative;
   padding: 80px 0;
   overflow: hidden;
@@ -2574,8 +2574,8 @@ img {
 
 .cta-card {
   background: radial-gradient(circle at 80% 20%, rgba(192, 132, 252, 0.25) 0%, transparent 50%),
-              radial-gradient(circle at 15% 80%, rgba(147, 51, 234, 0.3) 0%, transparent 45%),
-              linear-gradient(135deg, #0b0718 0%, #1c0a34 50%, #3b0764 100%);
+    radial-gradient(circle at 15% 80%, rgba(147, 51, 234, 0.3) 0%, transparent 45%),
+    linear-gradient(135deg, #0b0718 0%, #1c0a34 50%, #3b0764 100%);
   border-radius: var(--radius-lg);
   padding: 4rem 3rem;
   text-align: center;
